@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roboto-roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+body {
+    font-family: Roboto;
+    background: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+.nav-logo {
+    justify-content: flex-start;
+}
+
+
+
+
+/*navbar nagy kepernyore*/
+@media (min-width: 769px) {
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        background: #3E3939;
+        color: #fff;
+        padding: 0.5%;
+        margin: 0.5%;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1%;
+        color: black;
+        width: max-content;
+        flex-direction: row;
+        width: fit-content;
+    }
+
+    .nav-section a {
+        text-decoration: none;
+        color: black;
+        background-color: #fff;
+        padding: 5px 10%;
+        text-align: center;
+        border-radius: 10px;
+        min-width: 200px;
+    }
+
+    .nav-section a:active,
+    .nav-section a:hover {
+        background-color: orange;
+    }
+
+    .nav-section-mobile {
+        display: none;
+    }
+}
+
+/*navbar kis kepernyore*/
+@media (max-width: 768px) {
+    .nav-section {
+        display: none;
+    }
+
+    .nav-section a {
+        display: none;
+
+    }
+
+    .nav-section a:active,
+    .nav-section a:hover {
+        display: none;
+    }
+
+    .nav-hidden {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        background: #3E3939;
+        color: #fff;
+        padding: 0.5%;
+        margin: 0.5%;
+        border-radius: 10px;
+        justify-content: space-between;
+        height: 45px;
+    }
+
+    .nav-section-mobile {
+        min-width: fit-content;
+        background-color: #3E3939;
+        position: static;
+        top: 0px;
+        right: 0px;
+        max-width: 300px;
+        float: right;
+        margin-right: 0.5%;
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .nav-links-mobile {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .nav-links-mobile li {
+        width: 200px;
+        text-align: center;
+        background-color: #f6f4f4;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px 0px;
+    }
+
+    .nav-links-mobile li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+
+    }
+
+    .nav-links-mobile li:active,
+    .nav-links-mobile li:hover {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        background-color: orange;
+
+    }
+
+    .menu-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+        margin: 0 1%;
+    }
+}

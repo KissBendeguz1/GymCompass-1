@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar ami desktopon jo meretu -->
+    <nav class="navbar roboto-roboto">
+
+        <div class="nav-logo">GYMCOMPASS</div>
+        <div class="menu-icon" onclick="toggleNavHidden(menu)">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#F6F4F4">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M5 7H19" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                    <path d="M5 12L19 12" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M5 17L19 17" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+        </div>
+        <section class="nav-section ">
+            <a href="#main">Főoldal</a>
+            <a href="#contact">Kapcsolat</a>
+            <a href="#abaut">Rólunk</a>
+
+
+
+
+        </section>
+
+
+        <!--
+   Az edzőtermek lap alatt lesz alkalmazva   
+   <div class="search">
+      <input type="text" placeholder="Keresés...">
+    </div>
+    -->
+        </section>
+    </nav>
+
+    <!-- Nav ami mobilon jo-->
+    <section class="nav-section-mobile nav-hidden" id="nav-section-mobile">
+        <ul class="nav-links-mobile">
+            <li><a href="#main">Főoldal</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+            <li><a href="#abaut">Rólunk</a></li>
+            <section class="nav-section-mobile">
+
+        </ul>
+    </section>
+
+</body>
+<script>
+    const menu = document.getElementById("nav-section-mobile");
+    function toggleNavHidden(element) {
+        element.classList.toggle("nav-hidden");
+    }
+</script>
+
+</html>
