@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GymCompass</title>
+    <link rel="shortcut icon" href="./grafika/logo-svg.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,41 +17,44 @@
 <body>
 
     <!-- Navbar ami desktopon jo meretu -->
-    <nav class="navbar roboto-roboto">
+    <section id="">
+        <img id="hero-bg" src="./grafika/1-bg-svg.svg" alt="">
+        <nav class="navbar roboto-roboto">
 
-        <div class="nav-logo">GYMCOMPASS</div>
-        <div class="menu-icon" onclick="toggleNavHidden(menu)">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#F6F4F4">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <path d="M5 7H19" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    </path>
-                    <path d="M5 12L19 12" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    <path d="M5 17L19 17" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                </g>
-            </svg>
-        </div>
-        <section class="nav-section ">
-            <a href="#main">Főoldal</a>
-            <a href="#contact">Kapcsolat</a>
-            <a href="#abaut">Rólunk</a>
-
-
-
-
-        </section>
+            <div class="nav-logo">GYMCOMPASS</div>
+            <div class="menu-icon" onclick="toggleNavHidden(menu)">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#F6F4F4">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M5 7H19" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round">
+                        </path>
+                        <path d="M5 12L19 12" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M5 17L19 17" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <section class="nav-section ">
+                <a href="#main">Főoldal</a>
+                <a href="#contact">Kapcsolat</a>
+                <a href="#abaut">Rólunk</a>
 
 
-        <!--
+
+
+            </section>
+
+
+            <!--
    Az edzőtermek lap alatt lesz alkalmazva   
    <div class="search">
       <input type="text" placeholder="Keresés...">
     </div>
     -->
-        </section>
+    </section>
     </nav>
 
     <!-- Nav ami mobilon jo-->
@@ -63,6 +67,239 @@
 
         </ul>
     </section>
+    <section class="hero" id="main">
+        <section id="hero-text-section">
+            <h1 class="hero-text">GymCompass<br>Segítség a <br>Teremkereséshez</h1>
+            <a href=""><button class="grey-button-design">Ezdőtermek<svg width="64px" height="64px" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#fff" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg></button></a>
+        </section>
+        <img src="./grafika/logo-svg.svg" alt="logo" id="hero-logo">
+    </section>
+    </section>
+    <section class="stats">
+        <section>
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.09118 8H9.36418C9.72392 8.00873 10.0086 8.30725 10.0002 8.667V15.333C10.0086 15.6927 9.72392 15.9913 9.36418 16H8.09118C7.73144 15.9913 7.4468 15.6927 7.45518 15.333V14H5.63618C5.27644 13.9913 4.9918 13.6927 5.00018 13.333V10.667C4.9918 10.3073 5.27644 10.0087 5.63618 10H7.45518V8.667C7.4468 8.30725 7.73144 8.00873 8.09118 8Z"
+                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.9092 16H14.6362C14.2764 15.9913 13.9918 15.6927 14.0002 15.333V8.667C13.9918 8.30725 14.2764 8.00873 14.6362 8H15.9092C16.2689 8.00873 16.5536 8.30725 16.5452 8.667V10H18.3632C18.5361 10.0039 18.7004 10.0764 18.8199 10.2015C18.9393 10.3266 19.0042 10.4941 19.0002 10.667V13.333C19.0086 13.6927 18.7239 13.9913 18.3642 14H16.5452V15.333C16.5536 15.6927 16.2689 15.9913 15.9092 16Z"
+                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path
+                        d="M6.7052 14C6.7052 14.4142 7.04099 14.75 7.4552 14.75C7.86941 14.75 8.2052 14.4142 8.2052 14H6.7052ZM8.2052 10C8.2052 9.58579 7.86941 9.25 7.4552 9.25C7.04099 9.25 6.7052 9.58579 6.7052 10H8.2052ZM17.2962 10C17.2962 9.58579 16.9604 9.25 16.5462 9.25C16.132 9.25 15.7962 9.58579 15.7962 10H17.2962ZM15.7962 14C15.7962 14.4142 16.132 14.75 16.5462 14.75C16.9604 14.75 17.2962 14.4142 17.2962 14H15.7962ZM10.0002 11.25C9.58599 11.25 9.2502 11.5858 9.2502 12C9.2502 12.4142 9.58599 12.75 10.0002 12.75V11.25ZM14.0002 12.75C14.4144 12.75 14.7502 12.4142 14.7502 12C14.7502 11.5858 14.4144 11.25 14.0002 11.25V12.75ZM8.2052 14V10H6.7052V14H8.2052ZM15.7962 10V14H17.2962V10H15.7962ZM10.0002 12.75H14.0002V11.25H10.0002V12.75Z"
+                        fill="#000000"></path>
+                </g>
+            </svg>
+            <div>80+</div>
+            <div>Edzőterem</div>
+        </section>
+        <section>
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.09118 8H9.36418C9.72392 8.00873 10.0086 8.30725 10.0002 8.667V15.333C10.0086 15.6927 9.72392 15.9913 9.36418 16H8.09118C7.73144 15.9913 7.4468 15.6927 7.45518 15.333V14H5.63618C5.27644 13.9913 4.9918 13.6927 5.00018 13.333V10.667C4.9918 10.3073 5.27644 10.0087 5.63618 10H7.45518V8.667C7.4468 8.30725 7.73144 8.00873 8.09118 8Z"
+                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.9092 16H14.6362C14.2764 15.9913 13.9918 15.6927 14.0002 15.333V8.667C13.9918 8.30725 14.2764 8.00873 14.6362 8H15.9092C16.2689 8.00873 16.5536 8.30725 16.5452 8.667V10H18.3632C18.5361 10.0039 18.7004 10.0764 18.8199 10.2015C18.9393 10.3266 19.0042 10.4941 19.0002 10.667V13.333C19.0086 13.6927 18.7239 13.9913 18.3642 14H16.5452V15.333C16.5536 15.6927 16.2689 15.9913 15.9092 16Z"
+                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path
+                        d="M6.7052 14C6.7052 14.4142 7.04099 14.75 7.4552 14.75C7.86941 14.75 8.2052 14.4142 8.2052 14H6.7052ZM8.2052 10C8.2052 9.58579 7.86941 9.25 7.4552 9.25C7.04099 9.25 6.7052 9.58579 6.7052 10H8.2052ZM17.2962 10C17.2962 9.58579 16.9604 9.25 16.5462 9.25C16.132 9.25 15.7962 9.58579 15.7962 10H17.2962ZM15.7962 14C15.7962 14.4142 16.132 14.75 16.5462 14.75C16.9604 14.75 17.2962 14.4142 17.2962 14H15.7962ZM10.0002 11.25C9.58599 11.25 9.2502 11.5858 9.2502 12C9.2502 12.4142 9.58599 12.75 10.0002 12.75V11.25ZM14.0002 12.75C14.4144 12.75 14.7502 12.4142 14.7502 12C14.7502 11.5858 14.4144 11.25 14.0002 11.25V12.75ZM8.2052 14V10H6.7052V14H8.2052ZM15.7962 10V14H17.2962V10H15.7962ZM10.0002 12.75H14.0002V11.25H10.0002V12.75Z"
+                        fill="#000000"></path>
+                </g>
+            </svg>
+            <div>90+</div>
+            <div>Értékelés</div>
+        </section>
+        <section>
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.09118 8H9.36418C9.72392 8.00873 10.0086 8.30725 10.0002 8.667V15.333C10.0086 15.6927 9.72392 15.9913 9.36418 16H8.09118C7.73144 15.9913 7.4468 15.6927 7.45518 15.333V14H5.63618C5.27644 13.9913 4.9918 13.6927 5.00018 13.333V10.667C4.9918 10.3073 5.27644 10.0087 5.63618 10H7.45518V8.667C7.4468 8.30725 7.73144 8.00873 8.09118 8Z"
+                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.9092 16H14.6362C14.2764 15.9913 13.9918 15.6927 14.0002 15.333V8.667C13.9918 8.30725 14.2764 8.00873 14.6362 8H15.9092C16.2689 8.00873 16.5536 8.30725 16.5452 8.667V10H18.3632C18.5361 10.0039 18.7004 10.0764 18.8199 10.2015C18.9393 10.3266 19.0042 10.4941 19.0002 10.667V13.333C19.0086 13.6927 18.7239 13.9913 18.3642 14H16.5452V15.333C16.5536 15.6927 16.2689 15.9913 15.9092 16Z"
+                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path
+                        d="M6.7052 14C6.7052 14.4142 7.04099 14.75 7.4552 14.75C7.86941 14.75 8.2052 14.4142 8.2052 14H6.7052ZM8.2052 10C8.2052 9.58579 7.86941 9.25 7.4552 9.25C7.04099 9.25 6.7052 9.58579 6.7052 10H8.2052ZM17.2962 10C17.2962 9.58579 16.9604 9.25 16.5462 9.25C16.132 9.25 15.7962 9.58579 15.7962 10H17.2962ZM15.7962 14C15.7962 14.4142 16.132 14.75 16.5462 14.75C16.9604 14.75 17.2962 14.4142 17.2962 14H15.7962ZM10.0002 11.25C9.58599 11.25 9.2502 11.5858 9.2502 12C9.2502 12.4142 9.58599 12.75 10.0002 12.75V11.25ZM14.0002 12.75C14.4144 12.75 14.7502 12.4142 14.7502 12C14.7502 11.5858 14.4144 11.25 14.0002 11.25V12.75ZM8.2052 14V10H6.7052V14H8.2052ZM15.7962 10V14H17.2962V10H15.7962ZM10.0002 12.75H14.0002V11.25H10.0002V12.75Z"
+                        fill="#000000"></path>
+                </g>
+            </svg>
+            <div>70+</div>
+            <div>Felhasználó</div>
+        </section>
+    </section>
+
+    <!-- Top Gyms Section -->
+
+
+    </section>
+    <a href=""><button class="grey-button-design">Top Ezdőtermek</button></a>
+    <section class="top-gyms" id="top-gyms">
+
+
+
+        <div class="card-container">
+            <div class="card">
+                <img src="./grafika/images.jpg" alt="">
+                <div class="card-content">
+                    <div class="title">Edzőterem név</div>
+                    <div class="subtitle">Miskolc. Példa utca 69/b</div>
+
+                    <div class="section-title">Szolgáltatások</div>
+                    <ul>
+                        <li>Személyi edzés</li>
+                        <li>Szauna</li>
+                        <li>Zuhanyzó</li>
+                    </ul>
+
+                    <div><strong>Nyitvatartás:</strong> H-P 0-24</div>
+
+                    <div class="section-title">Árazás</div>
+                    <ul>
+                        <li>Beállított profil/beállított intervallum ft</li>
+                    </ul>
+
+                    <div class="section-title">Értékelés</div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span> 5/5
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./grafika/images.jpg" alt="">
+                <div class="card-content">
+                    <div class="title">Edzőterem név</div>
+                    <div class="subtitle">Miskolc. Példa utca 69/b</div>
+
+                    <div class="section-title">Szolgáltatások</div>
+                    <ul>
+                        <li>Személyi edzés</li>
+                        <li>Szauna</li>
+                        <li>Zuhanyzó</li>
+                    </ul>
+
+                    <div><strong>Nyitvatartás:</strong> H-P 0-24</div>
+
+                    <div class="section-title">Árazás</div>
+                    <ul>
+                        <li>Beállított profil/beállított intervallum ft</li>
+                    </ul>
+
+                    <div class="section-title">Értékelés</div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span> 5/5
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./grafika/images.jpg" alt="">
+                <div class="card-content">
+                    <div class="title">Edzőterem név</div>
+                    <div class="subtitle">Miskolc. Példa utca 69/b</div>
+
+                    <div class="section-title">Szolgáltatások</div>
+                    <ul>
+                        <li>Személyi edzés</li>
+                        <li>Szauna</li>
+                        <li>Zuhanyzó</li>
+                    </ul>
+
+                    <div><strong>Nyitvatartás:</strong> H-P 0-24</div>
+
+                    <div class="section-title">Árazás</div>
+                    <ul>
+                        <li>Beállított profil/beállított intervallum ft</li>
+                    </ul>
+
+                    <div class="section-title">Értékelés</div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span> 5/5
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <a href=""><button class="grey-button-design">Miért mi?</button></a>
+    <section>
+        <section class="why">
+
+            <div class="info-card">
+                <h2>Neked</h2>
+                <ul>
+                    <li>Egyszerűen kereshetsz edzőtermeink között.</li>
+                    <li>Az összes információ egy helyen.</li>
+                    <li>Könnyen használható.</li>
+                    <li>Megtálalhatod a számodra leg megfelelőbb edzőtermet.</li>
+                    <li>Könnyen kereshetsz, és szűrhetsz edzőtermeink között.</li>
+                    <li>Valós értékelések, rangsorok.</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h2>Edzőtermeknek</h2>
+                <ul>
+                    <li>Több elérés.</li>
+                    <li>Több vásárló.</li>
+                    <li>Saját weboldal nélkül is megosztható információk.</li>
+                    <li>Valós értékelések, valós visszajelzés.</li>
+                    <li>Könnyen látható, hogy teljesít a terem a többiekhez viszonyítva.</li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="dropdown">
+            <div class="accordion">
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Egyéb kérdésed lenne?</span>
+                        <div class="accordion-icon">⌄</div>
+                    </div>
+                    <div class="accordion-content">
+                        Kérjük, olvasd el a <a href="#">Rólunk</a> oldalunkat.
+                        Ha ezen felül is lenne kérdésed, vedd fel velünk a kapcsolatot a
+                        <a href="#">Kapcsolat</a> oldalunkon.
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Edzőtermet regisztrálnál?</span>
+                        <div class="accordion-icon">⌄</div>
+                    </div>
+                    <div class="accordion-content">
+                        Kérjük töltsd ki az <a href="#">Edzőterem regisztráció</a>-s űrlapot a
+                        <a href="#">Kapcsolat</a> oldalunkon.
+                    </div>
+                </div>
+        </section>
+        <section class="footer">
+            <div>
+            <img src="./grafika/logo-text-svg.svg.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="">Főoldal</a></li>
+                <li><a href="">Kapcsolat</a></li>
+                <li><a href="">Edzőtermek</a></li>
+                <li><a href="">Rólunk</a></li>
+                <li><a href="">Vissza a tetejére.</a></li>
+            </ul>
+        </section>
 
 </body>
 <script>
@@ -70,6 +307,21 @@
     function toggleNavHidden(element) {
         element.classList.toggle("nav-hidden");
     }
+
+    const items = document.querySelectorAll('.accordion-item');
+
+    items.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        header.addEventListener('click', () => {
+            item.classList.toggle('active');
+            const content = item.querySelector('.accordion-content');
+            if (item.classList.contains('active')) {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        });
+    });
 </script>
 
 </html>
