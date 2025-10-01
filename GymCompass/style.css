@@ -40,6 +40,14 @@ body {
     gap: 0.5rem;
 }
 
+.nav-ossz a {
+    text-decoration: none;
+}
+
+.nav-ossz a:hover, .nav-ossz a:active {
+    text-decoration: none;
+}
+
 
 
 .grey-button-design {
@@ -536,3 +544,4 @@ ul li {
 }
 
 }
+
