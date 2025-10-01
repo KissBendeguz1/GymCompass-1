@@ -23,6 +23,21 @@ body {
 
 .nav-logo {
     justify-content: flex-start;
+    height: 50px; 
+    width: auto; 
+    max-height: 100%;
+}
+.nav-logo-txt{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 600;
+    white-space: nowrap; 
+    max-height: 100%;
+    margin-top: -2%;
+}
+.nav-ossz{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 
@@ -519,4 +534,5 @@ ul li {
     height: auto;
     margin-left: 5%;
 }
+
 }
