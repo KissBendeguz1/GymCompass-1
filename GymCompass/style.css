@@ -40,11 +40,11 @@ body {
     gap: 0.5rem;
 }
 
-.nav-ossz a {
+.navbar a {
     text-decoration: none;
 }
 
-.nav-ossz a:hover, .nav-ossz a:active {
+.navbar a:hover, .navbar a:active {
     text-decoration: none;
 }
 
@@ -544,4 +544,5 @@ ul li {
 }
 
 }
+
 
