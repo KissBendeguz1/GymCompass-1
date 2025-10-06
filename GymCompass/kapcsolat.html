@@ -1,11 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GYMCOMPASS - Kapcsolat és Regisztráció</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <!-- Navbar ami desktopon jo meretu -->
+    <section id="">
+        <img id="hero-bg" src="./grafika/1-bg-svg.svg" alt="">
+        <nav class="navbar roboto-roboto">
+
+            <a id="navlogolink" href="#main">
+                <div class="nav-ossz"><img src="./grafika/logo-svg.svg" alt="logo" class="nav-logo"> <span
+                        class="nav-logo-txt">GymCompass</span></div>
+            </a>
+            <div class="menu-icon" onclick="toggleNavHidden(menu)">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#F6F4F4">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M5 7H19" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round">
+                        </path>
+                        <path d="M5 12L19 12" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M5 17L19 17" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <section class="nav-section ">
+                <a href="#main">Főoldal</a>
+                <a href="#contact">Kapcsolat</a>
+                <a href="#abaut">Rólunk</a>
+
+
+
+
+            </section>
+
+
+            <!--
+   Az edzőtermek lap alatt lesz alkalmazva   
+   <div class="search">
+      <input type="text" placeholder="Keresés...">
+    </div>
+    -->
+    </section>
+    </nav>
+
+    <!-- Nav ami mobilon jo-->
+    <section class="nav-section-mobile nav-hidden" id="nav-section-mobile">
+        <ul class="nav-links-mobile">
+            <li><a href="#main">Főoldal</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+            <li><a href="#abaut">Rólunk</a></li>
+            <section class="nav-section-mobile">
+
+        </ul>
+    </section>
+
+    <div class="container">
+        <section class="form-section">
+            <h2 class="section-title">Kapcsolat:</h2>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Név:</label>
+                    <input type="text" id="name" placeholder="Elek József">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Kapcsolattartási email:</label>
+                    <input type="email" id="email" placeholder="info@gymcompass.hu">
+                </div>
+
+                <p class="info-text">
+                    A válasz, és a kommunikáció a megadott "Kapcsolattartási Email"-címen fog történni.
+                </p>
+
+                <div class="form-group">
+                    <label for="message">Üzenet:</label>
+                    <textarea id="message" rows="5" placeholder="Személyes üzenetkezdet..."></textarea>
+                </div>
+
+                <div class="acceptance-text">
+                    <input type="checkbox" name="Adatkezeles elfogadas" id=""> Elfogadom az <a href="#"
+                        class="link-orange">Adatkezelési tájékoztatót</a> és a <a href="#"
+                        class="link-orange">Felhasználási feltételek</a>-et.
+                </div>
+
+                <button type="submit" class="btn-submit">Küldés</button>
+            </form>
+    </section></div>
+    <div class=" orange-svg-cover">
+    <div class="container">
+        </section>
+
+            <section class="form-section " id="">
+                <h2 class="section-title">Edzőterem regisztrációs űrlap</h2>
+
+                <form class="registration-form">
+                    <h3 class="subsection-title">Kapcsolattartási adatok:</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reg-name">Név:</label>
+                            <input type="text" id="reg-name" placeholder="Elek József">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-email">Kapcsolattartási email:</label>
+                            <input type="email" id="reg-email" placeholder="info@gymcompass.hu">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefonszám:</label>
+                            <input type="tel" id="phone" placeholder="+36 1 234 5678">
+                        </div>
+                    </div>
+
+                    <p class="info-text">
+                        A válasz, és a kommunikáció a megadott "Kapcsolattartási Email"-címen fog történni.
+                    </p>
+
+                    <h3 class="subsection-title-orange">Edzőterem adatok:</h3>
+
+                    <div class="form-group">
+                        <label for="gym-name">Edzőterem név:</label>
+                        <input type="text" id="gym-name" placeholder="Elek József">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gym-address">Edzőterem címe:</label>
+                        <input type="text" id="gym-address" placeholder="Elek József">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Egyéb információk:</label>
+                        <textarea rows="3" placeholder="Elek József"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Szolgáltatások::</label>
+                        <input type="text" placeholder="Pl.: Szauna, Uszoda, stb.">
+                    </div>
+
+                    <h3 class="subsection-title-orange">Nyitva tartás:</h3>
+
+                    <p class="info-text">
+                        Ha nincs nyitva a nap, akkor jelöld be a "Nincs nyitva a nap" opciót.
+                    </p>
+
+                    <div class="schedule-container">
+                        <div class="schedule-row">
+                            <label>Hétfő:</label>
+                            <div class="time-inputs">
+                                <input type="time" value="08:00">
+                                <span>-tól</span>
+                                <input type="time" value="18:00">
+                                <span>-ig</span>
+
+                            </div>
+                            <span class="schedule-note"><input type="checkbox" name="" id=""> Nincs nyitva a nap</span>
+                        </div>
+                        <div class="schedule-row">
+                            <label>Kedd:</label>
+                            <div class="time-inputs">
+                                <input type="time" value="08:00">
+                                <span>-tól</span>
+                                <input type="time" value="18:00">
+                                <span>-ig</span>
+                            </div>
+                            <span class="schedule-note"><input type="checkbox" name="" id=""> Nincs nyitva a nap</span>
+                        </div>
+                        <div class="schedule-row">
+                            <label>Szerda:</label>
+                            <div class="time-inputs">
+                                <input type="time" value="08:00">
+                                <span>-tól</span>
+                                <input type="time" value="18:00">
+                                <span>-ig</span>
+                            </div>
+                            <span class="schedule-note"><input type="checkbox" name="" id=""> Nincs nyitva a nap</span>
+                        </div>
+                        <div class="schedule-row">
+                            <label>Csütörtök:</label>
+                            <div class="time-inputs">
+                                <input type="time" value="08:00">
+                                <span>-tól</span>
+                                <input type="time" value="18:00">
+                                <span>-ig</span>
+                            </div>
+                            <span class="schedule-note"><input type="checkbox" name="" id=""> Nincs nyitva a nap</span>
+                        </div>
+                        <div class="schedule-row">
+                            <label>Péntek:</label>
+                            <div class="time-inputs">
+                                <input type="time" value="08:00">
+                                <span>-tól</span>
+                                <input type="time" value="18:00">
+                                <span>-ig</span>
+                            </div>
+                            <span class="schedule-note"><input type="checkbox" name="" id=""> Nincs nyitva a nap</span>
+                        </div>
+                        <div class="schedule-row">
+                            <label>Szombat:</label>
+                            <div class="time-inputs">
+                                <input type="time" value="08:00">
+                                <span>-tól</span>
+                                <input type="time" value="18:00">
+                                <span>-ig</span>
+                            </div>
+                            <span class="schedule-note"><input type="checkbox" name="" id=""> Nincs nyitva a nap</span>
+                        </div>
+                        <div class="schedule-row">
+                            <label>Vasárnap:</label>
+                            <div class="time-inputs">
+                                <input type="time" value="08:00">
+                                <span>-tól</span>
+                                <input type="time" value="18:00">
+                                <span>-ig</span>
+                            </div>
+                            <span class="schedule-note"><input type="checkbox" name="" id=""> Nincs nyitva a nap</span>
+                        </div>
+                    </div>
+                    <h3 class="subsection-title-orange">Linkek:</h3>
+                    <div class="social-media-section">
+
+                        <div class="form-group add-section" id="">
+                            <label for="facebook">Link neve:</label>
+                            <input type="" name="" id="" placeholder="Fészbk">
+                            <label for="Weboldal:">Link:</label>
+                            <input type="url" id="facebook" placeholder="Elek József">
+                            <button type="submit" class="btn-submit">Link hozzáadása</button>
+                        </div>
+                    </div>
+
+
+
+                    <h3 class="subsection-title-orange">Árazás:</h3>
+
+                    <div class="pricing-section">
+
+                    </div>
+                    <div class="form-group add-section" id="">
+                        <label for="berlet-nev">Típus neve:</label>
+                        <input type="" name="" id="berlet-nev" placeholder="Fészbk">
+                        <label for="ar:">Ár:</label>
+                        <input type="url" id="facebook" placeholder="Elek József">
+                        <button type="submit" id="ar" class="btn-submit">Ár hozzáadása</button>
+                    </div>
+
+                    <div>
+                        <div class="acceptance-text">
+                            <input type="checkbox" name="" id=""> Elfogadom az <a href="#"
+                                class="link-orange">Adatkezelési tájékoztatót</a>
+                            és a <a href="#" class="link-orange">Felhasználási feltételek</a>-et.
+                        </div>
+                        <button type="submit" class="btn-submit">Küldés</button>
+                    </div>
+        </div>
+
+
+
+
+        </section>
+
+        </form>
+    </div>
+</div>
+
+    </section>
+    <section class="footer">
+        <div>
+            <img src="./grafika/logo-text-svg.svg.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="">Főoldal</a></li>
+            <li><a href="">Kapcsolat</a></li>
+            <li><a href="">Edzőtermek</a></li>
+            <li><a href="">Rólunk</a></li>
+            <li><a href="">Vissza a tetejére.</a></li>
+        </ul>
+    </section>
+    </div>
 </body>
+
 </html>
