@@ -484,6 +484,7 @@ ul li {
         border-radius: 10px;
         width: fit-content;
         height: fit-content;
+        z-index: 999;
     }
 
     .nav-links-mobile {
