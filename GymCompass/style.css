@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none;
+    width: 0px;
+    height: 0px;
+    z-index: -99;
+}
+
 .roboto-roboto {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -912,4 +919,11 @@ input[type="checkbox"]:checked::after {
   border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+.reg-span-link {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
 }

@@ -6,76 +6,7 @@
   <title>GymCompass - Regisztráció</title>
   <link rel="stylesheet" href="./style.css">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #1c1c1c;
-      color: #fff;
-    }
 
-
-    /* Tartalom */
-    .content {
-      background-color: #fff;
-      color: #000;
-      min-height: 80vh;
-      position: relative;
-      padding-top: 80px;
-    }
-
-    .wave {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 120px;
-      background: #ff7b00;
-      clip-path: polygon(0 30%, 25% 50%, 50% 40%, 75% 55%, 100% 30%, 100% 100%, 0 100%);
-    }
-
-    .form-container {
-      background-color: #e0e0e0;
-      color: #000;
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 40px;
-      border-radius: 5px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
-
-    .form-container input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: none;
-      background-color: #222;
-      color: #fff;
-      border-radius: 3px;
-    }
-
-    .form-container button {
-      width: 100%;
-      padding: 10px;
-      background-color: #222;
-      color: #fff;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .form-container button:hover {
-      background-color: #ff7b00;
-      color: #000;
-    }
-
-
-    @media (max-width: 600px) {
-      .form-container {
-        width: 90%;
-      }
-    }
   </style>
 </head>
 <body>
@@ -134,13 +65,19 @@
         </ul>
     </section>
 
-  <main class="content">
-    <div class="form-container">
-      <form>
-        <label for="email">E-mail vagy telefonszám:</label>
+  <main class="content" >
+    <div class=" container form-section hidden" id="register">
+
+      <form class="registration-form form-group " >
+                        <h2 class="section-title">Regisztráció:</h2>
+        <label for="email">E-mail:</label>
         <input type="text" id="email" name="email" required>
 
-        <label for="name">Teljes név:</label>
+        <label for="name">Felhasználónév:</label>
+        <input type="text" id="name" name="name" required>
+
+        
+        <label for="name">Teljes Név::</label>
         <input type="text" id="name" name="name" required>
 
         <label for="password">Jelszó:</label>
@@ -149,11 +86,32 @@
         <label for="password2">Jelszó ismét:</label>
         <input type="password" id="password2" name="password2" required>
 
-        <button type="submit">Regisztráció</button>
+        <button type="submit" class="btn-submit">Regisztráció</button>
+        <h3 class="subsection-title-orange">Van profilja? <span class="reg-span-link" onclick="ShowLogin()">Belépés</span></h3>
+        
       </form>
     </div>
 
-    <div class="wave"></div>
+        <div class=" container form-section"id="login" >
+
+      <form class="registration-form form-group" >
+                        <h2 class="section-title">Belépés:</h2>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="name">Felhasználónév:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="password">Jelszó:</label>
+        <input type="password" id="password" name="password" required>
+
+
+        <button type="submit" class="btn-submit">Bejelentkezés</button>
+        <h3 class="subsection-title-orange">Nincs profilja? <span class="reg-span-link" onclick="ShowRegister()">Regisztráció</span></h3>
+      </form>
+    </div>
+
+
   </main>
         <section class="footer">
             <div>
@@ -174,6 +132,20 @@
     const menu = document.getElementById("nav-section-mobile");
     function toggleNavHidden(element) {
         element.classList.toggle("nav-hidden");
+    }
+
+    const reg = document.getElementById("register");
+    const log = document.getElementById("login");
+
+    function ShowRegister() {
+      log.classList.add("hidden");
+      reg.classList.remove("hidden");
+    }
+
+
+        function ShowLogin() {
+      log.classList.remove("hidden");
+      reg.classList.add("hidden");
     }
 
 </script>
