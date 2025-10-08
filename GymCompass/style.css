@@ -44,6 +44,12 @@ body {
     font-weight: bold;
     margin-left: 4%;
 }
+.bemutszov{
+    margin-top: 5%;
+    text-align: center;
+    color: #ff7517;
+    font-weight: bold;
+}
 
 .nav-logo {
     justify-content: flex-start;
@@ -960,3 +966,4 @@ input[type="checkbox"]:checked::after {
     cursor: pointer;
 
 }
+
