@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GymCompass - Regisztráció</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+
+
+    /* Tartalom */
+    .content {
+      background-color: #fff;
+      color: #000;
+      min-height: 80vh;
+      position: relative;
+      padding-top: 80px;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: #ff7b00;
+      clip-path: polygon(0 30%, 25% 50%, 50% 40%, 75% 55%, 100% 30%, 100% 100%, 0 100%);
+    }
+
+    .form-container {
+      background-color: #e0e0e0;
+      color: #000;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      background-color: #222;
+      color: #fff;
+      border-radius: 3px;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #222;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .form-container button:hover {
+      background-color: #ff7b00;
+      color: #000;
+    }
+
+
+    @media (max-width: 600px) {
+      .form-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><span>GYM</span>COMPASS</div>
+    <nav>
+      <a href="#">Főoldal</a>
+      <a href="#">Edzőtermek</a>
+      <a href="#" class="active">Regisztráció</a>
+      <a href="#">Kapcsolat</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <div class="form-container">
+      <form>
+        <label for="email">E-mail vagy telefonszám:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="name">Teljes név:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="password">Jelszó:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="password2">Jelszó ismét:</label>
+        <input type="password" id="password2" name="password2" required>
+
+        <button type="submit">Regisztráció</button>
+      </form>
+    </div>
+
+    <div class="wave"></div>
+  </main>
+
+    <section class="footer">
+        <div>
+            <img src="./grafika/logo-text-svg.svg.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="">Főoldal</a></li>
+            <li><a href="">Kapcsolat</a></li>
+            <li><a href="">Edzőtermek</a></li>
+            <li><a href="">Rólunk</a></li>
+            <li><a href="">Vissza a tetejére.</a></li>
+        </ul>
+    </section>
+    </div>
+</body>
+
+</body>
+</html>

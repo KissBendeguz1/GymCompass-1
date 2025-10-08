@@ -100,7 +100,8 @@ body {
     width: 100px;
     height: 100px;
     margin-bottom: 5px;
-    rotate: -45deg;
+    
+
 }
 
 #top-gym-bg {
@@ -364,6 +365,7 @@ ul li {
         margin: 0.5%;
         border-radius: 10px;
         justify-content: space-between;
+        position: static;
     }
 
     .menu-icon {
@@ -381,6 +383,22 @@ ul li {
         width: fit-content;
     }
 
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .nav-links svg {
+        width: 40px;
+        height: 36px;
+        margin: 0 10%;
+        margin-top: 5px;
+    }
+
+
+
     .nav-section a {
         text-decoration: none;
         color: black;
@@ -388,8 +406,20 @@ ul li {
         padding: 5px 10%;
         text-align: center;
         border-radius: 10px;
-        min-width: 200px;
+        width: 200px;
     }
+
+    #regicon {
+        border-radius: 10px;
+        background-image: url(./grafika/profil.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+
+    }
+
+
 
     .nav-section a:active,
     .nav-section a:hover {
