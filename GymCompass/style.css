@@ -330,7 +330,7 @@ ul li {
 
 
 /*navbar nagy kepernyore*/
-@media (min-width: 769px) {
+@media (min-width: 850px) {
 
     .hero-text {
         font-size: 5vw;
@@ -435,8 +435,12 @@ ul li {
 }
 
 /*navbar kis kepernyore*/
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .nav-section {
+        display: none;
+    }
+
+    .nav-links {
         display: none;
     }
 
@@ -490,6 +494,8 @@ ul li {
         align-items: flex-end;
     }
 
+
+
     .nav-links-mobile li {
         width: 200px;
         text-align: center;
@@ -503,6 +509,13 @@ ul li {
         text-decoration: none;
         color: black;
         font-weight: 500;
+
+    }
+
+    .nav-links-mobile svg {
+        width: 40px;
+        height: 30px;
+
 
     }
 
@@ -802,7 +815,7 @@ ul li {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 851px) {
     .header {
         flex-direction: column;
         gap: 15px;
