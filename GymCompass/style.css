@@ -621,6 +621,10 @@ ul li {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.form-section input {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .section-title {
     background-color: #3a3a3a;
     color: #fff;
