@@ -26,7 +26,24 @@ body {
     color: #222;
     line-height: 1.6;
 }
-
+.rolunk-text{
+    background-color: #D9D9D9;
+    width: 90%;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 1,75vw;
+    padding: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rolunk{
+    color: #ff7517;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-left: 4%;
+}
 
 .nav-logo {
     justify-content: flex-start;
@@ -446,6 +463,18 @@ ul li {
 
 /*navbar kis kepernyore*/
 @media (max-width: 850px) {
+    .rolunk-text{
+    background-color: #D9D9D9;
+    width: 90%;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 1,75vw;
+    padding: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
     .nav-section {
         display: none;
     }
@@ -929,4 +958,5 @@ input[type="checkbox"]:checked::after {
     text-decoration: none;
     font-weight: 500;
     cursor: pointer;
+
 }
