@@ -706,11 +706,31 @@ ul li {
     margin-bottom: 20px;
 }
 
+.form-img-upload {
+        display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #666;
+        width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+
+}
+
+.form-img-upload input[type="file"] {
+    border: none;
+    background-color: #f9f9f9;
+}
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
     font-size: 1em;
     color: #666;
+    
 }
 
 .form-group input,
