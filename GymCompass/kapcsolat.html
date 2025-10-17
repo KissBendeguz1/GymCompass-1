@@ -250,7 +250,7 @@
                             <input type="" name="" id="" placeholder="Fészbk">
                             <label for="Weboldal:">Link:</label>
                             <input type="url" id="facebook" placeholder="Kis Pista">
-                            <button type="submit" class="btn-submit">Link hozzáadása</button>
+                            <button type="button" class="btn-submit">Link hozzáadása</button>
                         </div>
                     </div>
 
@@ -266,7 +266,7 @@
                         <input type="" name="" id="berlet-nev" placeholder="Fészbk">
                         <label for="ar:">Ár:</label>
                         <input type="url" id="facebook" placeholder="Kis Pista">
-                        <button type="submit" id="ar" class="btn-submit">Ár hozzáadása</button>
+                        <button id="ar" type="button" class="btn-submit">Ár hozzáadása</button>
                     </div>
 
                     <div>
@@ -275,7 +275,7 @@
                                 class="link-orange">Adatkezelési tájékoztatót</a>
                             és a <a href="#" class="link-orange">Felhasználási feltételek</a>-et.
                         </div>
-                        <button type="submit" class="btn-submit">Küldés</button>
+                        <button type="button" onclick="return(false), SendGymData()" class="btn-submit">Küldés</button>
                     </div>
         </div>
 
@@ -310,6 +310,111 @@
     function toggleNavHidden(element) {
         element.classList.toggle("nav-hidden");
     }
+
+
+
+
+function SendGymData() {
+    let lsindex = localStorage.length;
+  const form = document.querySelector(".registration-form");
+    const contactName = document.getElementById("reg-name").value.trim();
+    const contactEmail = document.getElementById("reg-email").value.trim();
+    const contactPhone = document.getElementById("phone").value.trim();
+    const gymName = document.getElementById("gym-name").value.trim();
+    const gymAddress = document.getElementById("gym-address").value.trim();
+    const otherInfo = document.querySelector('textarea[placeholder="Kis Pista"]').value.trim();
+    const services = document.querySelector('input[placeholder="Pl.: Szauna, Uszoda, stb."]').value.split(",").map(s => s.trim()).filter(s => s !== "");
+    const imageFiles = document.getElementById("images").files;
+    const imagePaths = Array.from(imageFiles).map(f => f.name);
+    const scheduleRows = document.querySelectorAll(".schedule-row");
+    const days = ["Hetfo", "Kedd", "Szerda", "Csutortok", "Pentek", "Szombat", "Vasarnap"];
+    const schedule = {};
+    const linkNameInput = document.querySelector('.social-media-section input[placeholder="Fészbk"]');
+    const linkUrlInput = document.querySelector('.social-media-section input[type="url"]');
+    const links = [];
+    const berletNev = document.getElementById("berlet-nev").value.trim();
+    const arInput = document.querySelector('#ar').previousElementSibling; // ár input
+    const berletAr = arInput ? arInput.value.trim() : "";
+
+if ((contactName && contactEmail && contactPhone && gymName && gymAddress && otherInfo && services && imageFiles && imagePaths && scheduleRows && linkNameInput && linkUrlInput &&berletAr && berletAr) == "" ) {
+    console.log("Cont name" + contactName + "ConEmail" + contactEmail + contactPhone + gymName + gymAddress + otherInfo + services + imageFiles + imagePaths + scheduleRows + linkNameInput + linkUrlInput + berletAr + berletAr);
+    alert("Kérlek töltsd ki a kötelező mezőket: Kapcsolattartási adatok és Edzőterem adatok. Minden mező feltöltése kötelező, és a felhasználók igényét szolgálja.");
+    
+    return;}
+    else {
+        scheduleRows.forEach((row, i) => {
+      const times = row.querySelectorAll('input[type="time"]');
+      const closed = row.querySelector('input[type="checkbox"]').checked;
+      schedule[days[i]] = closed
+        ? { Nyitas: "Nincs nyitva", Zaras: "Nincs nyitva" }
+        : { Nyitas: times[0].value, Zaras: times[1].value };
+    });
+
+    // Linkek
+
+    if (linkNameInput && linkUrlInput && linkUrlInput.value.trim()) {
+      links.push({
+        nev: linkNameInput.value.trim(),
+        url: linkUrlInput.value.trim()
+      });
+    }
+
+
+
+
+    // JSON struktúra
+    const gymData = {
+      Edzoterem_id: "",
+      Regisztralo_tulajdonos_adatok: {
+        Profil_id: "",
+        Edzoterem_Feltoltes_datum: new Date().toString()
+      },
+      Kapcsolattarto_adatok: {
+        Kapcsolattarto_email: contactEmail,
+        Kapcsolattarto_tel: contactPhone,
+        Kapcsolattarto_nev: contactName
+      },
+      Edzoterem_adatok: {
+        Edzoterem_nev: gymName,
+        Edzoterem_cim: gymAddress,
+        Edzoterem_egyeb_inf: otherInfo,
+        Edzoterem_szolgaltatasok: services
+      },
+      Edzoterem_nyitvatartas: schedule,
+      Edzoterem_kepek: imagePaths,
+      Edzoterem_linkek: links,
+      Edzoterem_arazas: {
+        berlettipus1: {
+          Berlettipus_nev: berletNev,
+          Ar: berletAr
+        }
+      }
+    };
+    
+
+    console.log("Feltöltött JSON:", gymData);
+    localStorage.setItem(lsindex+1, JSON.stringify(gymData));
+    alert("Sikeres adatküldés! Az adatok elmentve a localStorage-ba.");
+    }
+    
+}
+
+
+    
+
+    // Itt pl. elküldheted fetch() segítségével egy API-nak:
+    /*
+    fetch("/api/edzotermek", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(gymData)
+    }).then(res => console.log("Sikeres feltöltés!"));
+    */
+
+  
+
+</script>
+
 
 </script>
 </html>
