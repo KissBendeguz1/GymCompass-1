@@ -245,11 +245,13 @@
                     <h3 class="subsection-title-orange">Linkek:</h3>
                     <div class="social-media-section">
 
-                        <div class="form-group add-section" id="">
-                            <label for="facebook">Link neve:</label>
-                            <input type="" name="" id="" placeholder="Fészbk">
-                            <label for="Weboldal:">Link:</label>
-                            <input type="url" id="facebook" placeholder="Kis Pista">
+                        <div class="form-group add-section" id="linkekContainer">
+                            <div id="linkekadd">
+                                <label>Link neve:</label>
+                                <input type="" name="LinkNeve" id="" placeholder="Facebook">
+                                <label>Link:</label>
+                                <input type="url" id="" name="LinkCime" placeholder="https://facebook.com/edzoterem">
+                            </div>
                             <button type="button" class="btn-submit">Link hozzáadása</button>
                         </div>
                     </div>
@@ -258,16 +260,19 @@
 
                     <h3 class="subsection-title-orange">Árazás:</h3>
 
-                    <div class="pricing-section">
+                    
 
-                    </div>
-                    <div class="form-group add-section" id="">
-                        <label for="berlet-nev">Típus neve:</label>
-                        <input type="" name="" id="berlet-nev" placeholder="Fészbk">
-                        <label for="ar:">Ár:</label>
-                        <input type="url" id="facebook" placeholder="Kis Pista">
+                    
+                    <div class="form-group add-section pricing-section" id="ArakContainer">
+                        <div id="ArakAdd">
+                            <label>Típus neve:</label>
+                            <input type="" name="BerletNeve" placeholder="Havi bérlet">
+                            <label for="ar:">Ár:</label>
+                            <input type="number" name="BerletAr" placeholder="19999">
+                        </div>
                         <button id="ar" type="button" class="btn-submit">Ár hozzáadása</button>
                     </div>
+                    
 
                     <div>
                         <div class="acceptance-text">
@@ -306,6 +311,65 @@
 </body>
 <!-- Guthub miatt added cuccos-->
 <script>
+
+    const ArakAdd = document.getElementById("ArakContainer");
+    ArakAdd.querySelector("button").addEventListener("click", function() {
+        const newArDiv = document.getElementById("ArakAdd");
+
+        const labelNev = document.createElement("label");
+        labelNev.textContent = "Típus neve:";
+        newArDiv.appendChild(labelNev);
+
+        const inputNev = document.createElement("input");
+        inputNev.type = "text";
+        inputNev.placeholder = "Havi bérlet";
+        inputNev.name = "BerletNeve";
+        newArDiv.appendChild(inputNev);
+
+        const labelAr = document.createElement("label");
+        labelAr.textContent = "Ár:";
+        newArDiv.appendChild(labelAr);
+
+        const inputAr = document.createElement("input");
+        inputAr.type = "number";
+        inputAr.placeholder = "19999";
+        inputAr.name = "BerletAr";
+        newArDiv.appendChild(inputAr);
+
+        const br = document.createElement("hr");
+        newArDiv.appendChild(br);
+
+    });
+
+    const LinkekAdd = document.getElementById("linkekContainer");
+    LinkekAdd.querySelector("button").addEventListener("click", function() {
+        const newLinkDiv = document.getElementById("linkekadd");
+
+        const labelName = document.createElement("label");
+        labelName.textContent = "Link neve:";
+        newLinkDiv.appendChild(labelName);
+
+        const inputName = document.createElement("input");
+        inputName.type = "text";
+        inputName.placeholder = "Pl.: Instagram";
+        inputName.name = "LinkNeve";
+        newLinkDiv.appendChild(inputName);
+
+        const labelUrl = document.createElement("label");
+        labelUrl.textContent = "Link:";
+        newLinkDiv.appendChild(labelUrl);
+
+        const inputUrl = document.createElement("input");
+        inputUrl.type = "url";
+        inputUrl.placeholder = "Pl.: https://instagram.com/edzoterem";
+        inputUrl.name = "LinkCime";
+        newLinkDiv.appendChild(inputUrl);
+
+        const br = document.createElement("hr");
+        newLinkDiv.appendChild(br);
+
+    });
+
     const menu = document.getElementById("nav-section-mobile");
     function toggleNavHidden(element) {
         element.classList.toggle("nav-hidden");
@@ -329,19 +393,20 @@ function SendGymData() {
     const scheduleRows = document.querySelectorAll(".schedule-row");
     const days = ["Hetfo", "Kedd", "Szerda", "Csutortok", "Pentek", "Szombat", "Vasarnap"];
     const schedule = {};
-    const linkNameInput = document.querySelector('.social-media-section input[placeholder="Fészbk"]');
-    const linkUrlInput = document.querySelector('.social-media-section input[type="url"]');
+    const linkNameInput = document.querySelectorAll('.social-media-section input[name="LinkNeve"]');
+    const linkUrlInput = document.querySelectorAll('.social-media-section input[name="LinkCime"]');
     const links = [];
-    const berletNev = document.getElementById("berlet-nev").value.trim();
-    const arInput = document.querySelector('#ar').previousElementSibling; // ár input
-    const berletAr = arInput ? arInput.value.trim() : "";
+    const berletNev = document.querySelectorAll('.pricing-section input[name="BerletNeve"]');
+    const arInput =document.querySelectorAll('.pricing-section input[name="BerletAr"]');
+    const berletAr = arInput ? arInput.value : "Nincs Megadva";
+    const arak = [];    
 
-if ((contactName && contactEmail && contactPhone && gymName && gymAddress && otherInfo && services && imageFiles && imagePaths && scheduleRows && linkNameInput && linkUrlInput &&berletAr && berletAr) == "" ) {
-    console.log("Cont name" + contactName + "ConEmail" + contactEmail + contactPhone + gymName + gymAddress + otherInfo + services + imageFiles + imagePaths + scheduleRows + linkNameInput + linkUrlInput + berletAr + berletAr);
-    alert("Kérlek töltsd ki a kötelező mezőket: Kapcsolattartási adatok és Edzőterem adatok. Minden mező feltöltése kötelező, és a felhasználók igényét szolgálja.");
+//if ((contactName && contactEmail && contactPhone && gymName && gymAddress && otherInfo && services && imageFiles && imagePaths && scheduleRows && linkNameInput && linkUrlInput &&berletAr && berletAr) == "" ) {
+  //  console.log("Cont name" + contactName + "ConEmail" + contactEmail + contactPhone + gymName + gymAddress + otherInfo + services + imageFiles + imagePaths + scheduleRows + linkNameInput + linkUrlInput + berletAr + berletAr);
+    //alert("Kérlek töltsd ki a kötelező mezőket: Kapcsolattartási adatok és Edzőterem adatok. Minden mező feltöltése kötelező, és a felhasználók igényét szolgálja.");
     
-    return;}
-    else {
+   // return;}
+    //else {
         scheduleRows.forEach((row, i) => {
       const times = row.querySelectorAll('input[type="time"]');
       const closed = row.querySelector('input[type="checkbox"]').checked;
@@ -350,21 +415,43 @@ if ((contactName && contactEmail && contactPhone && gymName && gymAddress && oth
         : { Nyitas: times[0].value, Zaras: times[1].value };
     });
 
-    // Linkek
+    const LinkNames = [];
+    const LinkUrls = [];
 
-    if (linkNameInput && linkUrlInput && linkUrlInput.value.trim()) {
-      links.push({
-        nev: linkNameInput.value.trim(),
-        url: linkUrlInput.value.trim()
-      });
+    console.log(linkNameInput.length);
+    //árazás
+    for (let index = 0; index < berletNev.length; index++) {
+        const element = berletNev[index];
+        arak.push({
+          nev: element.value.trim(),
+          ar: arInput[index].value
+        });
+        
     }
+
+    // Linkek
+        console.log("Link neve inputok száma: " + linkNameInput.length);
+        console.log("Link URL inputok száma: " + linkUrlInput.length);
+        console.log("Link neve inputok: " + linkNameInput);
+        console.log("Link URL inputok: " + linkUrlInput);
+
+        for (let index = 0; index < linkNameInput.length; index++) {
+            const element = linkNameInput[index];
+            links.push({
+              nev: element.value.trim(),
+              url: linkUrlInput[index].value.trim()
+            });
+            
+        }
+ 
+    
 
 
 
 
     // JSON struktúra
     const gymData = {
-      Edzoterem_id: "",
+      Edzoterem_id: new Date().getTime().toString(),
       Regisztralo_tulajdonos_adatok: {
         Profil_id: "",
         Edzoterem_Feltoltes_datum: new Date().toString()
@@ -383,12 +470,9 @@ if ((contactName && contactEmail && contactPhone && gymName && gymAddress && oth
       Edzoterem_nyitvatartas: schedule,
       Edzoterem_kepek: imagePaths,
       Edzoterem_linkek: links,
-      Edzoterem_arazas: {
-        berlettipus1: {
-          Berlettipus_nev: berletNev,
-          Ar: berletAr
-        }
-      }
+      Edzoterem_arazas: arak,
+        
+      
     };
     
 
@@ -397,19 +481,12 @@ if ((contactName && contactEmail && contactPhone && gymName && gymAddress && oth
     alert("Sikeres adatküldés! Az adatok elmentve a localStorage-ba.");
     }
     
-}
+//}
 
 
     
 
-    // Itt pl. elküldheted fetch() segítségével egy API-nak:
-    /*
-    fetch("/api/edzotermek", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(gymData)
-    }).then(res => console.log("Sikeres feltöltés!"));
-    */
+
 
   
 

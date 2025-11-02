@@ -733,6 +733,13 @@ ul li {
     
 }
 
+.form-group hr {
+    color: #e55a25;
+    margin: 10px;
+
+    fill: #e55a25;
+}
+
 .form-group input,
 .form-group textarea {
     width: 100%;
