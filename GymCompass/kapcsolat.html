@@ -265,12 +265,13 @@
                     
                     <div class="form-group add-section pricing-section" id="ArakContainer">
                         <div id="ArakAdd">
-                            <label>Típus neve:</label>
+                            <label>Havi / 30 napos bérlet (Kötelező megadni, ez alapján is szűrhetnek a felhasználók)</label>
                             <input type="" name="BerletNeve" placeholder="Havi bérlet">
-                            <label for="ar:">Ár:</label>
+                            <label for="ar:">Havi / 30 napos bérlet Ára:</label>
                             <input type="number" name="BerletAr" placeholder="19999">
+
                         </div>
-                        <button id="ar" type="button" class="btn-submit">Ár hozzáadása</button>
+                        <button id="ar" type="button" class="btn-submit">Típus / Ár hozzáadása</button>
                     </div>
                     
 
@@ -401,12 +402,12 @@ function SendGymData() {
     const berletAr = arInput ? arInput.value : "Nincs Megadva";
     const arak = [];    
 
-//if ((contactName && contactEmail && contactPhone && gymName && gymAddress && otherInfo && services && imageFiles && imagePaths && scheduleRows && linkNameInput && linkUrlInput &&berletAr && berletAr) == "" ) {
-  //  console.log("Cont name" + contactName + "ConEmail" + contactEmail + contactPhone + gymName + gymAddress + otherInfo + services + imageFiles + imagePaths + scheduleRows + linkNameInput + linkUrlInput + berletAr + berletAr);
-    //alert("Kérlek töltsd ki a kötelező mezőket: Kapcsolattartási adatok és Edzőterem adatok. Minden mező feltöltése kötelező, és a felhasználók igényét szolgálja.");
+if ((contactName && contactEmail && contactPhone && gymName && gymAddress && otherInfo && services && imageFiles && imagePaths && scheduleRows && linkNameInput && linkUrlInput &&berletAr && berletAr) == "" ) {
+    console.log("Cont name" + contactName + "ConEmail" + contactEmail + contactPhone + gymName + gymAddress + otherInfo + services + imageFiles + imagePaths + scheduleRows + linkNameInput + linkUrlInput + berletAr + berletAr);
+    alert("Kérlek töltsd ki a kötelező mezőket: Kapcsolattartási adatok és Edzőterem adatok. Minden mező feltöltése kötelező, és a felhasználók igényét szolgálja.");
     
-   // return;}
-    //else {
+    return;}
+    else {
         scheduleRows.forEach((row, i) => {
       const times = row.querySelectorAll('input[type="time"]');
       const closed = row.querySelector('input[type="checkbox"]').checked;
@@ -481,7 +482,7 @@ function SendGymData() {
     alert("Sikeres adatküldés! Az adatok elmentve a localStorage-ba.");
     }
     
-//}
+}
 
 
     
