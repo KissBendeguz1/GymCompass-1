@@ -1,0 +1,1522 @@
+[
+  {
+    "Edzoterem_id": "1730563200001",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@ironfit.hu",
+      "Kapcsolattarto_tel": "+36 30 309 3997",
+      "Kapcsolattarto_nev": "Kovács Péter"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "IronFit Gym",
+      "Edzoterem_cim": "Székesfehérvár, Fő utca 94.",
+      "Edzoterem_egyeb_inf": "Csoportos edzések",
+      "Edzoterem_szolgaltatasok": [
+        "Szauna",
+        "Uszoda",
+        "Csoportos órák"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "ironfit1.jpg",
+      "ironfit2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/ironfit"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/ironfit"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "21955 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "23290 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200002",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@fitzone.hu",
+      "Kapcsolattarto_tel": "+36 20 352 2268",
+      "Kapcsolattarto_nev": "Nagy Dóra"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "FitZone Gym",
+      "Edzoterem_cim": "Pécs, Fő utca 31.",
+      "Edzoterem_egyeb_inf": "Konditerem és uszoda",
+      "Edzoterem_szolgaltatasok": [
+        "Személyi edzés",
+        "Zumba",
+        "Masszázs",
+        "Uszoda"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "fitzone1.jpg",
+      "fitzone2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/fitzone"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/fitzone"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "20635 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "5255 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200003",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@gymfactory.hu",
+      "Kapcsolattarto_tel": "+36 30 813 1989",
+      "Kapcsolattarto_nev": "Varga László"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "GymFactory Gym",
+      "Edzoterem_cim": "Győr, Fő utca 29.",
+      "Edzoterem_egyeb_inf": "Modern géppark",
+      "Edzoterem_szolgaltatasok": [
+        "Spinning",
+        "Crossfit",
+        "Csoportos órák"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "gymfactory1.jpg",
+      "gymfactory2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/gymfactory"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/gymfactory"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "21068 HUF"
+      },
+      {
+        "nev": "Heti bérlet",
+        "ar": "4006 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200004",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@powerhouse.hu",
+      "Kapcsolattarto_tel": "+36 70 656 5476",
+      "Kapcsolattarto_nev": "Szabó Gábor"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "PowerHouse Gym",
+      "Edzoterem_cim": "Székesfehérvár, Fő utca 50.",
+      "Edzoterem_egyeb_inf": "Csoportos edzések",
+      "Edzoterem_szolgaltatasok": [
+        "Személyi edzés",
+        "Zumba"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "powerhouse1.jpg",
+      "powerhouse2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/powerhouse"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/powerhouse"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "23356 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "16344 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200005",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@musclelab.hu",
+      "Kapcsolattarto_tel": "+36 20 554 9008",
+      "Kapcsolattarto_nev": "Szabó Gábor"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "MuscleLab Gym",
+      "Edzoterem_cim": "Budapest, Fő utca 15.",
+      "Edzoterem_egyeb_inf": "Konditerem és uszoda",
+      "Edzoterem_szolgaltatasok": [
+        "Spinning",
+        "Csoportos órák",
+        "Zumba"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "Nincs nyitva",
+        "Zaras": "Nincs nyitva"
+      }
+    },
+    "Edzoterem_kepek": [
+      "musclelab1.jpg",
+      "musclelab2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/musclelab"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/musclelab"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "24354 HUF"
+      },
+      {
+        "nev": "Heti bérlet",
+        "ar": "33748 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200006",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@oxygengym.hu",
+      "Kapcsolattarto_tel": "+36 70 838 1399",
+      "Kapcsolattarto_nev": "Tóth Anna"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "OxygenGym Gym",
+      "Edzoterem_cim": "Miskolc, Fő utca 80.",
+      "Edzoterem_egyeb_inf": "Csoportos edzések",
+      "Edzoterem_szolgaltatasok": [
+        "Crossfit",
+        "Szauna"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "Nincs nyitva",
+        "Zaras": "Nincs nyitva"
+      }
+    },
+    "Edzoterem_kepek": [
+      "oxygengym1.jpg",
+      "oxygengym2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/oxygengym"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/oxygengym"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "22386 HUF"
+      },
+      {
+        "nev": "Heti bérlet",
+        "ar": "6523 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200007",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@vitalfit.hu",
+      "Kapcsolattarto_tel": "+36 70 446 3341",
+      "Kapcsolattarto_nev": "Nagy Dóra"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "VitalFit Gym",
+      "Edzoterem_cim": "Sopron, Fő utca 19.",
+      "Edzoterem_egyeb_inf": "Konditerem és uszoda",
+      "Edzoterem_szolgaltatasok": [
+        "Uszoda",
+        "Zumba"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "vitalfit1.jpg",
+      "vitalfit2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/vitalfit"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/vitalfit"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "23636 HUF"
+      },
+      {
+        "nev": "Negyedéves bérlet",
+        "ar": "4541 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200008",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@titangym.hu",
+      "Kapcsolattarto_tel": "+36 20 857 5768",
+      "Kapcsolattarto_nev": "Kovács Péter"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "TitanGym Gym",
+      "Edzoterem_cim": "Nyíregyháza, Fő utca 10.",
+      "Edzoterem_egyeb_inf": "Wellness részleg",
+      "Edzoterem_szolgaltatasok": [
+        "Csoportos órák",
+        "Szauna",
+        "Uszoda",
+        "Crossfit"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "titangym1.jpg",
+      "titangym2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/titangym"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/titangym"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "23933 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "23158 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200009",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@strongpoint.hu",
+      "Kapcsolattarto_tel": "+36 20 330 1329",
+      "Kapcsolattarto_nev": "Kovács Péter"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "StrongPoint Gym",
+      "Edzoterem_cim": "Miskolc, Fő utca 31.",
+      "Edzoterem_egyeb_inf": "Modern géppark",
+      "Edzoterem_szolgaltatasok": [
+        "Spinning",
+        "Crossfit",
+        "Csoportos órák"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "strongpoint1.jpg",
+      "strongpoint2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/strongpoint"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/strongpoint"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "23442 HUF"
+      },
+      {
+        "nev": "Negyedéves bérlet",
+        "ar": "34005 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200010",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@pulsegym.hu",
+      "Kapcsolattarto_tel": "+36 20 110 7522",
+      "Kapcsolattarto_nev": "Szabó Gábor"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "PulseGym Gym",
+      "Edzoterem_cim": "Budapest, Fő utca 96.",
+      "Edzoterem_egyeb_inf": "Konditerem és uszoda",
+      "Edzoterem_szolgaltatasok": [
+        "Spinning",
+        "Csoportos órák"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "pulsegym1.jpg",
+      "pulsegym2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/pulsegym"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/pulsegym"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "20849 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "16110 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200011",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@maxfit.hu",
+      "Kapcsolattarto_tel": "+36 70 894 8229",
+      "Kapcsolattarto_nev": "Nagy Dóra"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "MaxFit Gym",
+      "Edzoterem_cim": "Nyíregyháza, Fő utca 97.",
+      "Edzoterem_egyeb_inf": "Csoportos edzések",
+      "Edzoterem_szolgaltatasok": [
+        "Személyi edzés",
+        "Masszázs",
+        "Szauna"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "maxfit1.jpg",
+      "maxfit2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/maxfit"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/maxfit"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "22595 HUF"
+      },
+      {
+        "nev": "Negyedéves bérlet",
+        "ar": "4827 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200012",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@flexzone.hu",
+      "Kapcsolattarto_tel": "+36 70 865 9870",
+      "Kapcsolattarto_nev": "Tóth Anna"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "FlexZone Gym",
+      "Edzoterem_cim": "Nyíregyháza, Fő utca 17.",
+      "Edzoterem_egyeb_inf": "Konditerem és uszoda",
+      "Edzoterem_szolgaltatasok": [
+        "Zumba",
+        "Masszázs",
+        "Uszoda"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "flexzone1.jpg",
+      "flexzone2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/flexzone"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/flexzone"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "18637 HUF"
+      },
+      {
+        "nev": "Heti bérlet",
+        "ar": "13166 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200013",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@energylab.hu",
+      "Kapcsolattarto_tel": "+36 20 395 5569",
+      "Kapcsolattarto_nev": "Tóth Anna"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "EnergyLab Gym",
+      "Edzoterem_cim": "Budapest, Fő utca 31.",
+      "Edzoterem_egyeb_inf": "Modern géppark",
+      "Edzoterem_szolgaltatasok": [
+        "Masszázs",
+        "Zumba",
+        "Szauna",
+        "Spinning"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "energylab1.jpg",
+      "energylab2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/energylab"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/energylab"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "18846 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "4144 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200014",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@wellnesspro.hu",
+      "Kapcsolattarto_tel": "+36 70 555 8618",
+      "Kapcsolattarto_nev": "Kovács Péter"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "WellnessPro Gym",
+      "Edzoterem_cim": "Miskolc, Fő utca 16.",
+      "Edzoterem_egyeb_inf": "Csoportos edzések",
+      "Edzoterem_szolgaltatasok": [
+        "Csoportos órák",
+        "Crossfit"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "wellnesspro1.jpg",
+      "wellnesspro2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/wellnesspro"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/wellnesspro"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "24488 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "29292 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200015",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@sportbase.hu",
+      "Kapcsolattarto_tel": "+36 70 903 7061",
+      "Kapcsolattarto_nev": "Kovács Péter"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "SportBase Gym",
+      "Edzoterem_cim": "Szeged, Fő utca 72.",
+      "Edzoterem_egyeb_inf": "Wellness részleg",
+      "Edzoterem_szolgaltatasok": [
+        "Személyi edzés",
+        "Uszoda",
+        "Spinning"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "Nincs nyitva",
+        "Zaras": "Nincs nyitva"
+      }
+    },
+    "Edzoterem_kepek": [
+      "sportbase1.jpg",
+      "sportbase2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/sportbase"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/sportbase"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "17999 HUF"
+      },
+      {
+        "nev": "Negyedéves bérlet",
+        "ar": "3655 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200016",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@bodyline.hu",
+      "Kapcsolattarto_tel": "+36 30 353 2976",
+      "Kapcsolattarto_nev": "Tóth Anna"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "BodyLine Gym",
+      "Edzoterem_cim": "Székesfehérvár, Fő utca 93.",
+      "Edzoterem_egyeb_inf": "Wellness részleg",
+      "Edzoterem_szolgaltatasok": [
+        "Uszoda",
+        "Személyi edzés"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "bodyline1.jpg",
+      "bodyline2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/bodyline"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/bodyline"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "16386 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "14257 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200017",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@profit.hu",
+      "Kapcsolattarto_tel": "+36 20 478 9436",
+      "Kapcsolattarto_nev": "Nagy Dóra"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "ProFit Gym",
+      "Edzoterem_cim": "Sopron, Fő utca 67.",
+      "Edzoterem_egyeb_inf": "Modern géppark",
+      "Edzoterem_szolgaltatasok": [
+        "Zumba",
+        "Szauna",
+        "Masszázs",
+        "Csoportos órák"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "profit1.jpg",
+      "profit2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/profit"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/profit"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "19518 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "25929 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200018",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@nextlevel.hu",
+      "Kapcsolattarto_tel": "+36 20 605 6701",
+      "Kapcsolattarto_nev": "Varga László"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "NextLevel Gym",
+      "Edzoterem_cim": "Nyíregyháza, Fő utca 20.",
+      "Edzoterem_egyeb_inf": "Konditerem és uszoda",
+      "Edzoterem_szolgaltatasok": [
+        "Crossfit",
+        "Személyi edzés",
+        "Uszoda",
+        "Spinning"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "nextlevel1.jpg",
+      "nextlevel2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/nextlevel"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/nextlevel"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "18596 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "12986 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200019",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@thegym.hu",
+      "Kapcsolattarto_tel": "+36 30 512 3568",
+      "Kapcsolattarto_nev": "Nagy Dóra"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "TheGym Gym",
+      "Edzoterem_cim": "Székesfehérvár, Fő utca 94.",
+      "Edzoterem_egyeb_inf": "Konditerem és uszoda",
+      "Edzoterem_szolgaltatasok": [
+        "Szauna",
+        "Csoportos órák",
+        "Személyi edzés",
+        "Spinning"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "thegym1.jpg",
+      "thegym2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/thegym"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/thegym"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "23512 HUF"
+      },
+      {
+        "nev": "Napi belépő",
+        "ar": "7452 HUF"
+      }
+    ]
+  },
+  {
+    "Edzoterem_id": "1730563200020",
+    "Regisztralo_tulajdonos_adatok": {
+      "Profil_id": "",
+      "Edzoterem_Feltoltes_datum": "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    "Kapcsolattarto_adatok": {
+      "Kapcsolattarto_email": "info@activezone.hu",
+      "Kapcsolattarto_tel": "+36 20 758 4786",
+      "Kapcsolattarto_nev": "Kovács Péter"
+    },
+    "Edzoterem_adatok": {
+      "Edzoterem_nev": "ActiveZone Gym",
+      "Edzoterem_cim": "Miskolc, Fő utca 40.",
+      "Edzoterem_egyeb_inf": "Wellness részleg",
+      "Edzoterem_szolgaltatasok": [
+        "Masszázs",
+        "Csoportos órák",
+        "Zumba"
+      ]
+    },
+    "Edzoterem_nyitvatartas": {
+      "Hetfo": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Kedd": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szerda": {
+        "Nyitas": "06:00",
+        "Zaras": "22:00"
+      },
+      "Csutortok": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Pentek": {
+        "Nyitas": "06:00",
+        "Zaras": "20:00"
+      },
+      "Szombat": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      },
+      "Vasarnap": {
+        "Nyitas": "06:00",
+        "Zaras": "21:00"
+      }
+    },
+    "Edzoterem_kepek": [
+      "activezone1.jpg",
+      "activezone2.jpg"
+    ],
+    "Edzoterem_linkek": [
+      {
+        "nev": "Facebook",
+        "url": "https://facebook.com/activezone"
+      },
+      {
+        "nev": "Instagram",
+        "url": "https://instagram.com/activezone"
+      }
+    ],
+    "Edzoterem_arazas": [
+      {
+        "nev": "Havi bérlet",
+        "ar": "20357 HUF"
+      },
+      {
+        "nev": "Negyedéves bérlet",
+        "ar": "27528 HUF"
+      }
+    ]
+  }
+]
