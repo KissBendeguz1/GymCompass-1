@@ -4,19 +4,2447 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edzőtermek</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="text/javascript" src="./edzotermek_haviberletel.json">
 </head>
 <body>
-    
+    <!-- Navbar ami desktopon jo meretu -->
+    <section id="">
+        <img id="hero-bg" src="./grafika/1-bg-svg.svg" alt="">
+        <nav class="navbar roboto-roboto">
+
+            <a id="navlogolink" href="./index.html"><div class="nav-ossz"><img src="./grafika/logo-svg.svg" alt="logo" class="nav-logo"> <span class="nav-logo-txt">GymCompass</span></div></a>
+            <div class="menu-icon" onclick="toggleNavHidden(menu)">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#F6F4F4">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M5 7H19" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round">
+                        </path>
+                        <path d="M5 12L19 12" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M5 17L19 17" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="nav-links">
+            <section class="nav-section ">
+                <a href="./">Edzőtermek</a>
+                <a href="./kapcsolat.html">Kapcsolat</a>
+                <a href="./rolunk.html">Rólunk</a>
+
+
+
+
+
+            </section>
+            <section>
+                <a href="./registracio.html"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
+
+            </section>
+
+
+
+    </section>
+    </nav>
+
+    <!-- Nav ami mobilon jo-->
+    <section class="nav-section-mobile nav-hidden" id="nav-section-mobile">
+        <ul class="nav-links-mobile">
+            <li><a href="#main">Edzőtermek</a></li>
+            <li><a href="./kapcsolat.html">Kapcsolat</a></li>
+            <li><a href="./rolunk.html">Rólunk</a></li>
+            <li><a href="./registracio.html"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a></li>
+
+
+        </ul>
+    </section>
+
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-group">
+                <label for="city">Város:</label>
+                <select id="city" class="filter-select">
+                    <option>Aba</option>
+<option>Abádszalók</option>
+<option>Abaújszántó</option>
+<option>Abony</option>
+<option>Ács</option>
+<option>Adony</option>
+<option>Ajak</option>
+<option>Ajka</option>
+<option>Albertirsa</option>
+<option>Alsózsolca</option>
+<option>Aszód</option>
+<option>Bábolna</option>
+<option>Bácsalmás</option>
+<option>Badacsonytomaj</option>
+<option>Baja</option>
+<option>Baktalórántháza</option>
+<option>Balassagyarmat</option>
+<option>Balatonalmádi</option>
+<option>Balatonboglár</option>
+<option>Balatonföldvár</option>
+<option>Balatonfüred</option>
+<option>Balatonfűzfő</option>
+<option>Balatonkenese</option>
+<option>Balatonlelle</option>
+<option>Balkány</option>
+<option>Balmazújváros</option>
+<option>Barcs</option>
+<option>Bátaszék</option>
+<option>Bátonyterenye</option>
+<option>Battonya</option>
+<option>Békés</option>
+<option>Békéscsaba</option>
+<option>Bélapátfalva</option>
+<option>Beled</option>
+<option>Berettyóújfalu</option>
+<option>Berhida</option>
+<option>Besenyszög</option>
+<option>Biatorbágy</option>
+<option>Bicske</option>
+<option>Biharkeresztes</option>
+<option>Bodajk</option>
+<option>Bóly</option>
+<option>Bonyhád</option>
+<option>Borsodnádasd</option>
+<option>Budakalász</option>
+<option>Budakeszi</option>
+<option>Budaörs</option>
+<option>Budapest</option>
+<option>Bük</option>
+<option>Cegléd</option>
+<option>Celldömölk</option>
+<option>Cigánd</option>
+<option>Csákvár</option>
+<option>Csanádpalota</option>
+<option>Csenger</option>
+<option>Csepreg</option>
+<option>Csongrád</option>
+<option>Csorna</option>
+<option>Csorvás</option>
+<option>Csurgó</option>
+<option>Dabas</option>
+<option>Debrecen</option>
+<option>Demecser</option>
+<option>Derecske</option>
+<option>Dévaványa</option>
+<option>Devecser</option>
+<option>Diósd</option>
+<option>Dombóvár</option>
+<option>Dombrád</option>
+<option>Dorog</option>
+<option>Dunaföldvár</option>
+<option>Dunaharaszti</option>
+<option>Dunakeszi</option>
+<option>Dunaújváros</option>
+<option>Dunavarsány</option>
+<option>Dunavecse</option>
+<option>Edelény</option>
+<option>Eger</option>
+<option>Elek</option>
+<option>Emőd</option>
+<option>Encs</option>
+<option>Enying</option>
+<option>Ercsi</option>
+<option>Érd</option>
+<option>Esztergom</option>
+<option>Fegyvernek</option>
+<option>Fehérgyarmat</option>
+<option>Felsőzsolca</option>
+<option>Fertőd</option>
+<option>Fertőszentmiklós</option>
+<option>Fonyód</option>
+<option>Fót</option>
+<option>Füzesabony</option>
+<option>Füzesgyarmat</option>
+<option>Gárdony</option>
+<option>Göd</option>
+<option>Gödöllő</option>
+<option>Gönc</option>
+<option>Gyál</option>
+<option>Gyomaendrőd</option>
+<option>Gyömrő</option>
+<option>Gyöngyös</option>
+<option>Gyöngyöspata</option>
+<option>Gyönk</option>
+<option>Győr</option>
+<option>Gyula</option>
+<option>Hajdúböszörmény</option>
+<option>Hajdúdorog</option>
+<option>Hajdúhadház</option>
+<option>Hajdúnánás</option>
+<option>Hajdúsámson</option>
+<option>Hajdúszoboszló</option>
+<option>Hajós</option>
+<option>Halásztelek</option>
+<option>Harkány</option>
+<option>Hatvan</option>
+<option>Herend</option>
+<option>Heves</option>
+<option>Hévíz</option>
+<option>Hódmezővásárhely</option>
+<option>Ibrány</option>
+<option>Igal</option>
+<option>Isaszeg</option>
+<option>Izsák</option>
+<option>Jánoshalma</option>
+<option>Jánosháza</option>
+<option>Jánossomorja</option>
+<option>Jászapáti</option>
+<option>Jászárokszállás</option>
+<option>Jászberény</option>
+<option>Jászfényszaru</option>
+<option>Jászkisér</option>
+<option>Kaba</option>
+<option>Kadarkút</option>
+<option>Kalocsa</option>
+<option>Kaposvár</option>
+<option>Kapuvár</option>
+<option>Karcag</option>
+<option>Kazincbarcika</option>
+<option>Kecel</option>
+<option>Kecskemét</option>
+<option>Kemecse</option>
+<option>Kenderes</option>
+<option>Kerekegyháza</option>
+<option>Kerepes</option>
+<option>Keszthely</option>
+<option>Kisbér</option>
+<option>Kisköre</option>
+<option>Kiskőrös</option>
+<option>Kiskunfélegyháza</option>
+<option>Kiskunhalas</option>
+<option>Kiskunlacháza</option>
+<option>Kiskunmajsa</option>
+<option>Kistarcsa</option>
+<option>Kistelek</option>
+<option>Kisújszállás</option>
+<option>Kisvárda</option>
+<option>Komádi</option>
+<option>Komárom</option>
+<option>Komló</option>
+<option>Kondoros</option>
+<option>Kozármisleny</option>
+<option>Körmend</option>
+<option>Körösladány</option>
+<option>Kőszeg</option>
+<option>Kunhegyes</option>
+<option>Kunszentmárton</option>
+<option>Kunszentmiklós</option>
+<option>Lábatlan</option>
+<option>Lajosmizse</option>
+<option>Lébény</option>
+<option>Lengyeltóti</option>
+<option>Lenti</option>
+<option>Létavértes</option>
+<option>Letenye</option>
+<option>Lőrinci</option>
+<option>Maglód</option>
+<option>Mágocs</option>
+<option>Makó</option>
+<option>Mándok</option>
+<option>Marcali</option>
+<option>Máriapócs</option>
+<option>Martfű</option>
+<option>Martonvásár</option>
+<option>Mátészalka</option>
+<option>Medgyesegyháza</option>
+<option>Mélykút</option>
+<option>Mezőberény</option>
+<option>Mezőcsát</option>
+<option>Mezőhegyes</option>
+<option>Mezőkeresztes</option>
+<option>Mezőkovácsháza</option>
+<option>Mezőkövesd</option>
+<option>Mezőtúr</option>
+<option>Mindszent</option>
+<option>Miskolc</option>
+<option>Mohács</option>
+<option>Monor</option>
+<option>Mór</option>
+<option>Mórahalom</option>
+<option>Mosonmagyaróvár</option>
+<option>Nádudvar</option>
+<option>Nagyatád</option>
+<option>Nagybajom</option>
+<option>Nagyecsed</option>
+<option>Nagyhalász</option>
+<option>Nagykálló</option>
+<option>Nagykanizsa</option>
+<option>Nagykáta</option>
+<option>Nagykőrös</option>
+<option>Nagymányok</option>
+<option>Nagymaros</option>
+<option>Nyékládháza</option>
+<option>Nyergesújfalu</option>
+<option>Nyíradony</option>
+<option>Nyírbátor</option>
+<option>Nyírbogát</option>
+<option>Nyíregyháza</option>
+<option>Nyírlugos</option>
+<option>Nyírmada</option>
+<option>Nyírtelek</option>
+<option>Ócsa</option>
+<option>Onga</option>
+<option>Orosháza</option>
+<option>Oroszlány</option>
+<option>Ózd</option>
+<option>Őrbottyán</option>
+<option>Őriszentpéter</option>
+<option>Örkény</option>
+<option>Pacsa</option>
+<option>Paks</option>
+<option>Pálháza</option>
+<option>Pannonhalma</option>
+<option>Pápa</option>
+<option>Pásztó</option>
+<option>Pécel</option>
+<option>Pécs</option>
+<option>Pécsvárad</option>
+<option>Pétervására</option>
+<option>Pilis</option>
+<option>Piliscsaba</option>
+<option>Pilisvörösvár</option>
+<option>Polgár</option>
+<option>Polgárdi</option>
+<option>Pomáz</option>
+<option>Pusztaszabolcs</option>
+<option>Putnok</option>
+<option>Püspökladány</option>
+<option>Rácalmás</option>
+<option>Ráckeve</option>
+<option>Rakamaz</option>
+<option>Rákóczifalva</option>
+<option>Répcelak</option>
+<option>Rétság</option>
+<option>Rudabánya</option>
+<option>Sajóbábony</option>
+<option>Sajószentpéter</option>
+<option>Salgótarján</option>
+<option>Sándorfalva</option>
+<option>Sárbogárd</option>
+<option>Sarkad</option>
+<option>Sárospatak</option>
+<option>Sárvár</option>
+<option>Sásd</option>
+<option>Sátoraljaújhely</option>
+<option>Sellye</option>
+<option>Siklós</option>
+<option>Simontornya</option>
+<option>Siófok</option>
+<option>Solt</option>
+<option>Soltvadkert</option>
+<option>Sopron</option>
+<option>Sülysáp</option>
+<option>Sümeg</option>
+<option>Szabadszállás</option>
+<option>Szarvas</option>
+<option>Százhalombatta</option>
+<option>Szécsény</option>
+<option>Szeged</option>
+<option>Szeghalom</option>
+<option>Székesfehérvár</option>
+<option>Szekszárd</option>
+<option>Szendrő</option>
+<option>Szentendre</option>
+<option>Szentes</option>
+<option>Szentgotthárd</option>
+<option>Szentlőrinc</option>
+<option>Szerencs</option>
+<option>Szigethalom</option>
+<option>Szigetszentmiklós</option>
+<option>Szigetvár</option>
+<option>Szikszó</option>
+<option>Szob</option>
+<option>Szolnok</option>
+<option>Szombathely</option>
+<option>Tab</option>
+<option>Tamási</option>
+<option>Tápiószele</option>
+<option>Tapolca</option>
+<option>Tát</option>
+<option>Tata</option>
+<option>Tatabánya</option>
+<option>Téglás</option>
+<option>Tét</option>
+<option>Tiszacsege</option>
+<option>Tiszaföldvár</option>
+<option>Tiszafüred</option>
+<option>Tiszakécske</option>
+<option>Tiszalök</option>
+<option>Tiszaújváros</option>
+<option>Tiszavasvári</option>
+<option>Tokaj</option>
+<option>Tolna</option>
+<option>Tompa</option>
+<option>Tótkomlós</option>
+<option>Tököl</option>
+<option>Törökbálint</option>
+<option>Törökszentmiklós</option>
+<option>Tura</option>
+<option>Túrkeve</option>
+<option>Újfehértó</option>
+<option>Újhartyán</option>
+<option>Újkígyós</option>
+<option>Újszász</option>
+<option>Üllő</option>
+<option>Vác</option>
+<option>Vaja</option>
+<option>Vámospércs</option>
+<option>Várpalota</option>
+<option>Vásárosnamény</option>
+<option>Vasvár</option>
+<option>Vecsés</option>
+<option>Velence</option>
+<option>Vép</option>
+<option>Veresegyház</option>
+<option>Verpelét</option>
+<option>Veszprém</option>
+<option>Vésztő</option>
+<option>Villány</option>
+<option>Visegrád</option>
+<option>Záhony</option>
+<option>Zalaegerszeg</option>
+<option>Zalakaros</option>
+<option>Zalalövő</option>
+<option>Zalaszentgrót</option>
+<option>Zamárdi</option>
+<option>Zirc</option>
+<option>Zsámbék</option>
+
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="services">Szolgáltatások:</label>
+                <select id="services" class="filter-select" multiple size="1">
+<option>Konditermi gépek (erősítőgépek)</option>
+<option>Szabad súlyok (súlyzók, rudak, tárcsák)</option>
+<option>Kardiógépek (futópad, ellipszis, evezőgép)</option>
+<option>Személyi edzés (personal training)</option>
+<option>Csoportos edzések</option>
+<option>Spinning</option>
+<option>CrossFit</option>
+<option>Funkcionális edzés</option>
+<option>TRX edzés</option>
+<option>Jóga</option>
+<option>Pilates</option>
+<option>Stretching / nyújtóóra</option>
+<option>Zumba</option>
+<option>Aerobik</option>
+<option>Step aerobik</option>
+<option>BodyPump</option>
+<option>Bootcamp edzés</option>
+<option>Kettlebell edzés</option>
+<option>Saját testsúlyos edzés</option>
+<option>Erőemelés</option>
+<option>Testépítés</option>
+<option>High Intensity Interval Training (HIIT)</option>
+<option>Tabata</option>
+<option>Mobility / ízületi mozgékonysági tréning</option>
+<option>Személyre szabott edzésterv</option>
+<option>Testösszetétel-mérés (InBody, Tanita stb.)</option>
+<option>Fitnesz tanácsadás</option>
+<option>Táplálkozási tanácsadás</option>
+<option>Diétás konzultáció</option>
+<option>Egészségügyi állapotfelmérés</option>
+<option>Pulzusmérés / pulzuszónás edzés</option>
+<option>Zsírégető programok</option>
+<option>Rehabilitációs edzés</option>
+<option>Gyógytorna</option>
+<option>Senior edzések</option>
+<option>Kismama torna</option>
+<option>Gyerek fitnesz / junior edzés</option>
+<option>Önvédelmi tréning</option>
+<option>Boksz / kick-box</option>
+<option>Thai boksz</option>
+<option>Harcművészet (karate, judo, MMA stb.)</option>
+<option>Cross-training pálya</option>
+<option>Saját alkalmazás vagy online bejelentkezés</option>
+<option>Online edzések / livestream órák</option>
+<option>Virtuális spinning / cycling</option>
+<option>Fitnesz app integráció (pl. MyZone, Garmin, Fitbit)</option>
+<option>Edzésnapló rendszer</option>
+<option>Teljesítménymérés</option>
+<option>Edzői konzultáció</option>
+<option>Motivációs program / edzéskövetés</option>
+<option>Wellness részleg</option>
+<option>Szauna (finn, infraszauna)</option>
+<option>Gőzkabin</option>
+<option>Sókabin</option>
+<option>Hideg-meleg merülőmedence</option>
+<option>Jacuzzi / pezsgőfürdő</option>
+<option>Úszómedence</option>
+<option>Masszázs</option>
+<option>Sportmasszázs</option>
+<option>Nyirokmasszázs</option>
+<option>Relaxációs zóna</option>
+<option>Szolárium</option>
+<option>Szaunaprogramok</option>
+<option>Aromaterápia</option>
+<option>SPA kezelések</option>
+<option>Smink- és szépségszolgáltatások</option>
+<option>Fodrászat</option>
+<option>Manikűr/pedikűr</option>
+<option>Sminktanácsadás</option>
+<option>Ruhatár / öltöző / zuhanyzó</option>
+<option>Szekrényzár / értékmegőrző</option>
+<option>Törölköző szolgáltatás</option>
+<option>Edzőruha bérlés</option>
+<option>Fitneszshop</option>
+<option>Fehérje- és táplálékkiegészítő bár</option>
+<option>Smoothie bár / kávézó</option>
+<option>Egészséges étkezde / büfé</option>
+<option>Automatás ital / snack</option>
+<option>Ingyenes víz / vízautomata</option>
+<option>Wi-Fi</option>
+<option>Parkoló</option>
+<option>Kerékpártároló</option>
+<option>Klíma / szellőztetés</option>
+<option>Zene / DJ edzésekhez</option>
+<option>TV / kijelzők a gépeken</option>
+<option>Biztonsági rendszer (kamerák, beléptetés)</option>
+<option>Bérletkezelő rendszer</option>
+<option>Online foglalás / applikáció</option>
+<option>Mobilfizetés / érintésmentes belépés</option>
+<option>Hűségprogram / pontgyűjtés</option>
+<option>Edzőtermi közösségi események</option>
+<option>Versenyfelkészítés</option>
+<option>Fitnesz kihívások / Challenge programok</option>
+<option>Edzőtáborok</option>
+<option>Céges fitneszprogram</option>
+<option>Reggeli / esti órarend széles választékban</option>
+<option>Próbabérlet / nyílt nap</option>
+<option>24 órás nyitvatartás</option>
+<option>Hibrid edzés (online + offline kombináció)</option>
+<option>Fenntartható / környezettudatos működés</option>
+<option>Smith-gép</option>
+<option>Lapos pad</option>
+<option>Ferdepados nyomópad</option>
+<option>Guggolóállvány</option>
+<option>Power rack</option>
+<option>Smith keret</option>
+<option>Kábeles csigás torony</option>
+<option>Lapátos evezőgép</option>
+<option>Hiperextenziós pad</option>
+<option>Hasprés pad</option>
+<option>Inklines pad</option>
+<option>Decline pad</option>
+<option>Mellnyomó gép</option>
+<option>Hátlehúzó gép</option>
+<option>Evezőgép ülve</option>
+<option>Combfeszítő gép</option>
+<option>Combhajlító gép</option>
+<option>Lábtoló gép</option>
+<option>Lábhajlító pad</option>
+<option>Vádligép</option>
+<option>Lábtoló szán</option>
+<option>Smith squat gép</option>
+<option>Cable crossover</option>
+<option>Bicepszpad</option>
+<option>Tricepsznyújtó gép</option>
+<option>Lendkerekes evezőgép</option>
+<option>Ellipszis tréner</option>
+<option>Lépcsőzőgép</option>
+<option>Air bike</option>
+<option>Spin bike</option>
+<option>Sífutó ergométer</option>
+<option>Gumihevederes edzés</option>
+<option>Súlymellény</option>
+<option>Battle rope</option>
+<option>Slam ball</option>
+<option>Medicine ball</option>
+<option>Plyo box</option>
+<option>Bosu labda</option>
+<option>Balance board</option>
+<option>Húzódzkodó keret</option>
+<option>Dips állvány</option>
+<option>Gyűrűs edzés</option>
+<option>Rúdfitnesz / pole fitness</option>
+<option>Street workout állvány</option>
+<option>Calisthenics zóna</option>
+<option>Akadálypálya</option>
+<option>Funkcionális kocka (rig)</option>
+<option>Core training</option>
+<option>Stability edzés</option>
+<option>Agility létra</option>
+<option>Speed cone</option>
+<option>Power sled (húzószán)</option>
+<option>Farmers walk súly</option>
+<option>Sledgehammer workout</option>
+<option>Strongman edzés</option>
+<option>Tire flip (gumiabroncs forgatás)</option>
+<option>Rope climbing</option>
+<option>Box jump</option>
+<option>Sprint sáv</option>
+<option>Vertical jump állvány</option>
+<option>Resistance band zóna</option>
+<option>Suspension training</option>
+<option>Floor barre</option>
+<option>Barre edzés</option>
+<option>Hot jóga</option>
+<option>Power jóga</option>
+<option>Flow jóga</option>
+<option>Yin jóga</option>
+<option>BodyArt</option>
+<option>Callanetics</option>
+<option>Kangoo jumps</option>
+<option>Rebound edzés</option>
+<option>Trambulin fitnesz</option>
+<option>Táncos edzés</option>
+<option>Latin dance workout</option>
+<option>Hip-hop dance fitness</option>
+<option>Cardio kickboxing</option>
+<option>Capoeira</option>
+<option>Tai Chi</option>
+<option>Chi Kung</option>
+<option>Meditációs tréning</option>
+<option>Légzéstechnikai gyakorlatok</option>
+<option>Preventív gerinctorna</option>
+<option>Tartásjavító edzés</option>
+<option>SMR hengeres mobilizálás</option>
+<option>Fascia tréning</option>
+<option>Pilates reformer</option>
+<option>Stretch gép</option>
+<option>Vibrációs tréning</option>
+<option>Infratréner</option>
+<option>Hypoxi tréning</option>
+<option>EMS tréning (elektrostimulációs)</option>
+<option>Cryoterápia</option>
+<option>Infra szauna kerékpár</option>
+<option>Alakformáló kezelések</option>
+<option>Zsírfagyasztás / kavitáció</option>
+<option>Nyirokstimulációs gép</option>
+<option>Testtekercselés</option>
+<option>Szépségápolási program</option>
+<option>Relaxációs meditáció</option>
+<option>Aromaterápiás masszázs</option>
+<option>Krioszauna</option>
+<option>Floatációs terápia</option>
+<option>Sportpszichológiai tanácsadás</option>
+<option>Motivációs coaching</option>
+<option>Online edzéstervezés</option>
+<option>Virtuális személyi edzés</option>
+<option>AI alapú edzésmonitorozás</option>
+<option>Teljesítményteszt (VO2 max)</option>
+<option>Vérnyomásmérés</option>
+<option>Vércukorszint ellenőrzés</option>
+<option>Fitnesz diagnosztika</option>
+<option>Sérülésmegelőző edzés</option>
+<option>Mobil fitnesz (kültéri edzésprogramok)</option>
+<option>Street gym kültéri eszközök</option>
+<option>Kutyás fitnesz (dog fitness)</option>
+<option>Partner edzés / páros program</option>
+<option>Edzőképzés / workshop</option>
+<option>Fitnesz rendezvény / verseny szervezés</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price">Ár:</label>
+                <select id="price" class="filter-select">
+                    <option value="">Válassz</option>
+                    <option value="low">5000-10000 Ft</option>
+                    <option value="medium">10000-15000 Ft</option>
+                    <option value="high">15000+ Ft</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort">Rangsorolás:</label>
+                <select id="sort" class="filter-select">
+                    <option value="">Válassz</option>
+                    <option value="rating">Értékelés szerint</option>
+                    <option value="price-low">Ár (növekvő)</option>
+                    <option value="price-high">Ár (csökkenő)</option>
+                </select>
+            </div>
+            <button type="" id="saveSelection" class="btn-submit">Szűrés</button>
+        </div>
+    </div>
+
+    <!-- Background SVG Top -->
+    <div class="bg-svg-top"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+        <!-- All Gyms Section -->
+        <section class="gym-section all-gyms-section">
+            <div class="container">
+                <h2 class="section-title">Edzőtermek:</h2>
+                <div class="gym-grid">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Background SVG Bottom -->
+
+
+          <section class="footer">
+            <div>
+            <img src="./grafika/logo-text-svg.svg.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="./index.html">Főoldal</a></li>
+                <li><a href="./kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="./edzotermek.html">Edzőtermek</a></li>
+                <li><a href="./rolunk.html">Rólunk</a></li>
+                <li><a href="./registracio.html">Regisztráció</a></li>
+            
+            </ul>
+        </section>
+
+    <script src="gym-data-manager.js"></script>
+    <script src="script.js"></script>
+
+
 </body>
 <script>
+
+    //Elore megcsinalt edzoterem adatok, h ne kelljken feltolteni minden egyes alkalommal
+    const edzotermek = [
+  {
+    Edzoterem_id: "1730563200001",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@ironfit.hu",
+      Kapcsolattarto_tel: "+36 30 309 3997",
+      Kapcsolattarto_nev: "Kovács Péter"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "IronFit Gym",
+      Edzoterem_cim: "Székesfehérvár, Fő utca 94.",
+      Edzoterem_egyeb_inf: "Csoportos edzések",
+      Edzoterem_szolgaltatasok: [
+        "Szauna",
+        "Uszoda",
+        "Csoportos órák"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "ironfit1.jpg",
+      "ironfit2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/ironfit"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/ironfit"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "21955 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "23290 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200002",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@fitzone.hu",
+      Kapcsolattarto_tel: "+36 20 352 2268",
+      Kapcsolattarto_nev: "Nagy Dóra"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "FitZone Gym",
+      Edzoterem_cim: "Pécs, Fő utca 31.",
+      Edzoterem_egyeb_inf: "Konditerem és uszoda",
+      Edzoterem_szolgaltatasok: [
+        "Személyi edzés",
+        "Zumba",
+        "Masszázs",
+        "Uszoda"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "fitzone1.jpg",
+      "fitzone2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/fitzone"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/fitzone"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "20635 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "5255 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200003",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@gymfactory.hu",
+      Kapcsolattarto_tel: "+36 30 813 1989",
+      Kapcsolattarto_nev: "Varga László"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "GymFactory Gym",
+      Edzoterem_cim: "Győr, Fő utca 29.",
+      Edzoterem_egyeb_inf: "Modern géppark",
+      Edzoterem_szolgaltatasok: [
+        "Spinning",
+        "Crossfit",
+        "Csoportos órák"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "gymfactory1.jpg",
+      "gymfactory2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/gymfactory"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/gymfactory"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "21068 HUF"
+      },
+      {
+        nev: "Heti bérlet",
+        ar: "4006 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200004",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@powerhouse.hu",
+      Kapcsolattarto_tel: "+36 70 656 5476",
+      Kapcsolattarto_nev: "Szabó Gábor"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "PowerHouse Gym",
+      Edzoterem_cim: "Székesfehérvár, Fő utca 50.",
+      Edzoterem_egyeb_inf: "Csoportos edzések",
+      Edzoterem_szolgaltatasok: [
+        "Személyi edzés",
+        "Zumba"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "powerhouse1.jpg",
+      "powerhouse2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/powerhouse"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/powerhouse"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "23356 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "16344 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200005",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@musclelab.hu",
+      Kapcsolattarto_tel: "+36 20 554 9008",
+      Kapcsolattarto_nev: "Szabó Gábor"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "MuscleLab Gym",
+      Edzoterem_cim: "Budapest, Fő utca 15.",
+      Edzoterem_egyeb_inf: "Konditerem és uszoda",
+      Edzoterem_szolgaltatasok: [
+        "Spinning",
+        "Csoportos órák",
+        "Zumba"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Vasarnap: {
+        Nyitas: "Nincs nyitva",
+        Zaras: "Nincs nyitva"
+      }
+    },
+    Edzoterem_kepek: [
+      "musclelab1.jpg",
+      "musclelab2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/musclelab"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/musclelab"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "24354 HUF"
+      },
+      {
+        nev: "Heti bérlet",
+        ar: "33748 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200006",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@oxygengym.hu",
+      Kapcsolattarto_tel: "+36 70 838 1399",
+      Kapcsolattarto_nev: "Tóth Anna"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "OxygenGym Gym",
+      Edzoterem_cim: "Miskolc, Fő utca 80.",
+      Edzoterem_egyeb_inf: "Csoportos edzések",
+      Edzoterem_szolgaltatasok: [
+        "Crossfit",
+        "Szauna"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Vasarnap: {
+        Nyitas: "Nincs nyitva",
+        Zaras: "Nincs nyitva"
+      }
+    },
+    Edzoterem_kepek: [
+      "oxygengym1.jpg",
+      "oxygengym2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/oxygengym"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/oxygengym"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "22386 HUF"
+      },
+      {
+        nev: "Heti bérlet",
+        ar: "6523 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200007",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@vitalfit.hu",
+      Kapcsolattarto_tel: "+36 70 446 3341",
+      Kapcsolattarto_nev: "Nagy Dóra"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "VitalFit Gym",
+      Edzoterem_cim: "Sopron, Fő utca 19.",
+      Edzoterem_egyeb_inf: "Konditerem és uszoda",
+      Edzoterem_szolgaltatasok: [
+        "Uszoda",
+        "Zumba"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "vitalfit1.jpg",
+      "vitalfit2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/vitalfit"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/vitalfit"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "23636 HUF"
+      },
+      {
+        nev: "Negyedéves bérlet",
+        ar: "4541 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200008",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@titangym.hu",
+      Kapcsolattarto_tel: "+36 20 857 5768",
+      Kapcsolattarto_nev: "Kovács Péter"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "TitanGym Gym",
+      Edzoterem_cim: "Nyíregyháza, Fő utca 10.",
+      Edzoterem_egyeb_inf: "Wellness részleg",
+      Edzoterem_szolgaltatasok: [
+        "Csoportos órák",
+        "Szauna",
+        "Uszoda",
+        "Crossfit"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "titangym1.jpg",
+      "titangym2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/titangym"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/titangym"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "23933 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "23158 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200009",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@strongpoint.hu",
+      Kapcsolattarto_tel: "+36 20 330 1329",
+      Kapcsolattarto_nev: "Kovács Péter"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "StrongPoint Gym",
+      Edzoterem_cim: "Miskolc, Fő utca 31.",
+      Edzoterem_egyeb_inf: "Modern géppark",
+      Edzoterem_szolgaltatasok: [
+        "Spinning",
+        "Crossfit",
+        "Csoportos órák"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "strongpoint1.jpg",
+      "strongpoint2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/strongpoint"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/strongpoint"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "23442 HUF"
+      },
+      {
+        nev: "Negyedéves bérlet",
+        ar: "34005 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200010",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@pulsegym.hu",
+      Kapcsolattarto_tel: "+36 20 110 7522",
+      Kapcsolattarto_nev: "Szabó Gábor"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "PulseGym Gym",
+      Edzoterem_cim: "Budapest, Fő utca 96.",
+      Edzoterem_egyeb_inf: "Konditerem és uszoda",
+      Edzoterem_szolgaltatasok: [
+        "Spinning",
+        "Csoportos órák"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "pulsegym1.jpg",
+      "pulsegym2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/pulsegym"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/pulsegym"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "20849 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "16110 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200011",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@maxfit.hu",
+      Kapcsolattarto_tel: "+36 70 894 8229",
+      Kapcsolattarto_nev: "Nagy Dóra"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "MaxFit Gym",
+      Edzoterem_cim: "Nyíregyháza, Fő utca 97.",
+      Edzoterem_egyeb_inf: "Csoportos edzések",
+      Edzoterem_szolgaltatasok: [
+        "Személyi edzés",
+        "Masszázs",
+        "Szauna"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "maxfit1.jpg",
+      "maxfit2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/maxfit"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/maxfit"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "22595 HUF"
+      },
+      {
+        nev: "Negyedéves bérlet",
+        ar: "4827 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200012",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@flexzone.hu",
+      Kapcsolattarto_tel: "+36 70 865 9870",
+      Kapcsolattarto_nev: "Tóth Anna"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "FlexZone Gym",
+      Edzoterem_cim: "Nyíregyháza, Fő utca 17.",
+      Edzoterem_egyeb_inf: "Konditerem és uszoda",
+      Edzoterem_szolgaltatasok: [
+        "Zumba",
+        "Masszázs",
+        "Uszoda"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "flexzone1.jpg",
+      "flexzone2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/flexzone"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/flexzone"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "18637 HUF"
+      },
+      {
+        nev: "Heti bérlet",
+        ar: "13166 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200013",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@energylab.hu",
+      Kapcsolattarto_tel: "+36 20 395 5569",
+      Kapcsolattarto_nev: "Tóth Anna"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "EnergyLab Gym",
+      Edzoterem_cim: "Budapest, Fő utca 31.",
+      Edzoterem_egyeb_inf: "Modern géppark",
+      Edzoterem_szolgaltatasok: [
+        "Masszázs",
+        "Zumba",
+        "Szauna",
+        "Spinning"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "energylab1.jpg",
+      "energylab2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/energylab"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/energylab"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "18846 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "4144 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200014",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@wellnesspro.hu",
+      Kapcsolattarto_tel: "+36 70 555 8618",
+      Kapcsolattarto_nev: "Kovács Péter"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "WellnessPro Gym",
+      Edzoterem_cim: "Miskolc, Fő utca 16.",
+      Edzoterem_egyeb_inf: "Csoportos edzések",
+      Edzoterem_szolgaltatasok: [
+        "Csoportos órák",
+        "Crossfit"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "wellnesspro1.jpg",
+      "wellnesspro2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/wellnesspro"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/wellnesspro"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "24488 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "29292 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200015",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@sportbase.hu",
+      Kapcsolattarto_tel: "+36 70 903 7061",
+      Kapcsolattarto_nev: "Kovács Péter"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "SportBase Gym",
+      Edzoterem_cim: "Szeged, Fő utca 72.",
+      Edzoterem_egyeb_inf: "Wellness részleg",
+      Edzoterem_szolgaltatasok: [
+        "Személyi edzés",
+        "Uszoda",
+        "Spinning"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Vasarnap: {
+        Nyitas: "Nincs nyitva",
+        Zaras: "Nincs nyitva"
+      }
+    },
+    Edzoterem_kepek: [
+      "sportbase1.jpg",
+      "sportbase2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/sportbase"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/sportbase"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "17999 HUF"
+      },
+      {
+        nev: "Negyedéves bérlet",
+        ar: "3655 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200016",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@bodyline.hu",
+      Kapcsolattarto_tel: "+36 30 353 2976",
+      Kapcsolattarto_nev: "Tóth Anna"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "BodyLine Gym",
+      Edzoterem_cim: "Székesfehérvár, Fő utca 93.",
+      Edzoterem_egyeb_inf: "Wellness részleg",
+      Edzoterem_szolgaltatasok: [
+        "Uszoda",
+        "Személyi edzés"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "bodyline1.jpg",
+      "bodyline2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/bodyline"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/bodyline"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "16386 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "14257 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200017",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@profit.hu",
+      Kapcsolattarto_tel: "+36 20 478 9436",
+      Kapcsolattarto_nev: "Nagy Dóra"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "ProFit Gym",
+      Edzoterem_cim: "Sopron, Fő utca 67.",
+      Edzoterem_egyeb_inf: "Modern géppark",
+      Edzoterem_szolgaltatasok: [
+        "Zumba",
+        "Szauna",
+        "Masszázs",
+        "Csoportos órák"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "profit1.jpg",
+      "profit2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/profit"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/profit"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "19518 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "25929 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200018",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@nextlevel.hu",
+      Kapcsolattarto_tel: "+36 20 605 6701",
+      Kapcsolattarto_nev: "Varga László"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "NextLevel Gym",
+      Edzoterem_cim: "Nyíregyháza, Fő utca 20.",
+      Edzoterem_egyeb_inf: "Konditerem és uszoda",
+      Edzoterem_szolgaltatasok: [
+        "Crossfit",
+        "Személyi edzés",
+        "Uszoda",
+        "Spinning"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "nextlevel1.jpg",
+      "nextlevel2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/nextlevel"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/nextlevel"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "18596 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "12986 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200019",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@thegym.hu",
+      Kapcsolattarto_tel: "+36 30 512 3568",
+      Kapcsolattarto_nev: "Nagy Dóra"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "TheGym Gym",
+      Edzoterem_cim: "Székesfehérvár, Fő utca 94.",
+      Edzoterem_egyeb_inf: "Konditerem és uszoda",
+      Edzoterem_szolgaltatasok: [
+        "Szauna",
+        "Csoportos órák",
+        "Személyi edzés",
+        "Spinning"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "thegym1.jpg",
+      "thegym2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/thegym"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/thegym"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "23512 HUF"
+      },
+      {
+        nev: "Napi belépő",
+        ar: "7452 HUF"
+      }
+    ]
+  },
+  {
+    Edzoterem_id: "1730563200020",
+    Regisztralo_tulajdonos_adatok: {
+      Profil_id: "",
+      Edzoterem_Feltoltes_datum: "Sun Nov 02 2025 16:12:11 GMT+0100"
+    },
+    Kapcsolattarto_adatok: {
+      Kapcsolattarto_email: "info@activezone.hu",
+      Kapcsolattarto_tel: "+36 20 758 4786",
+      Kapcsolattarto_nev: "Kovács Péter"
+    },
+    Edzoterem_adatok: {
+      Edzoterem_nev: "ActiveZone Gym",
+      Edzoterem_cim: "Miskolc, Fő utca 40.",
+      Edzoterem_egyeb_inf: "Wellness részleg",
+      Edzoterem_szolgaltatasok: [
+        "Masszázs",
+        "Csoportos órák",
+        "Zumba"
+      ]
+    },
+    Edzoterem_nyitvatartas: {
+      Hetfo: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Kedd: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szerda: {
+        Nyitas: "06:00",
+        Zaras: "22:00"
+      },
+      Csutortok: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Pentek: {
+        Nyitas: "06:00",
+        Zaras: "20:00"
+      },
+      Szombat: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      },
+      Vasarnap: {
+        Nyitas: "06:00",
+        Zaras: "21:00"
+      }
+    },
+    Edzoterem_kepek: [
+      "activezone1.jpg",
+      "activezone2.jpg"
+    ],
+    Edzoterem_linkek: [
+      {
+        nev: "Facebook",
+        url: "https://facebook.com/activezone"
+      },
+      {
+        nev: "Instagram",
+        url: "https://instagram.com/activezone"
+      }
+    ],
+    Edzoterem_arazas: [
+      {
+        nev: "Havi bérlet",
+        ar: "20357 HUF"
+      },
+      {
+        nev: "Negyedéves bérlet",
+        ar: "27528 HUF"
+      }
+    ]
+  }
+]
+
+edzotermek.forEach((edzoterem, index) => {
+    localStorage.setItem(index + 1, JSON.stringify(edzoterem));});
+
+        const menu = document.getElementById("nav-section-mobile");
+    function toggleNavHidden(element) {
+        element.classList.toggle("nav-hidden");
+    }
+/*
+      document.getElementById("saveSelection").addEventListener("click", function () {
+    const select = document.getElementById("services");
+    const selectedServices = Array.from(select.selectedOptions).map(opt => opt.text);
+    console.log("Kiválasztott szolgáltatások:", selectedServices);
+    alert("Mentve! (" + selectedServices.length + " elem kiválasztva)");
+  });*/
+
     let lsid = localStorage.length;
+
+    /*<div class="card">
+                <img src="./grafika/images.jpg" alt="">
+                <div class="card-content">
+                    <div class="title">Edzőterem név</div>
+                    <div class="subtitle">Miskolc. Példa utca 69/b</div>
+
+                    <div class="section-title">Szolgáltatások</div>
+                    <ul>
+                        <li>Személyi edzés</li>
+                        <li>Szauna</li>
+                        <li>Zuhanyzó</li>
+                    </ul>
+
+                    <div><strong>Nyitvatartás:</strong> H-P 0-24</div>
+
+                    <div class="section-title">Árazás</div>
+                    <ul>
+                        <li>Beállított profil/beállított intervallum ft</li>
+                    </ul>
+
+                    <div class="section-title">Értékelés</div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span> 5/5
+                    </div>
+                </div>
+            </div>*/
+
+
+function LoadGym(element, feltolteshelye) {
+    const a = document.createElement("a");
+      const gymCard = document.createElement('div');
+  gymCard.className = 'card';
+  const img = document.createElement('img');
+  img.src = './grafika/placeholderimg.jpg';
+    gymCard.appendChild(img);
+const title = document.createElement('div');
+    title.className = 'title';
+
+    const edzoteremnev = document.createElement('p');
+    edzoteremnev.textContent = element.Edzoterem_adatok.Edzoterem_nev;
+
+
+title.appendChild(edzoteremnev);
+
+console.log(title);
+gymCard.appendChild(title);
+    
+    const subtitle = document.createElement('div');
+    subtitle.className = 'subtitle';
+    subtitle.textContent = element.Edzoterem_adatok.Edzoterem_cim;
+    console.log(element.Edzoterem_adatok.Edzoterem_nev);
+    const szolgáltatások = document.createElement('div');
+    szolgáltatások.className = 'section-title';
+    szolgáltatások.textContent = 'Szolgáltatások';
+    const szolgáltatásokList = document.createElement('ul');
+    const Szolgaltatasok = [];
+
+
+element.Edzoterem_adatok.Edzoterem_szolgaltatasok.forEach(element => {
+        
+        SzolgaltatasokListLi = "<li>" + element + "</li>";
+        szolgáltatásokList.innerHTML += SzolgaltatasokListLi;
+        szolgáltatásokList.style.listStyleType = "none";
+       
+    });;
+
+
+    const nyitvatartás = document.createElement('div');
+    nyitvatartás.textContent = "Nyitvatartás";
+    nyitvatartás.className = 'section-title';
+    const nyitvatartasList = document.createElement('ul');
+    nyitvatartasList.style.listStyleType = "none";
+
+let hetfo = "<li>" + (element.Edzoterem_nyitvatartas.Hetfo.Nyitas === "Nincs nyitva"
+    ? "Hétfő: Zárva"
+    : "Hétfő: " + element.Edzoterem_nyitvatartas.Hetfo.Nyitas + " - " + element.Edzoterem_nyitvatartas.Hetfo.Zaras) + "</li>";
+
+let kedd = "<li>" + (element.Edzoterem_nyitvatartas.Kedd.Nyitas === "Nincs nyitva"
+    ? "Kedd: Zárva"
+    : "Kedd: " + element.Edzoterem_nyitvatartas.Kedd.Nyitas + " - " + element.Edzoterem_nyitvatartas.Kedd.Zaras) + "</li>";
+
+let szerda = "<li>" + (element.Edzoterem_nyitvatartas.Szerda.Nyitas === "Nincs nyitva"
+    ? "Szerda: Zárva"
+    : "Szerda: " + element.Edzoterem_nyitvatartas.Szerda.Nyitas + " - " + element.Edzoterem_nyitvatartas.Szerda.Zaras) + "</li>";
+
+let csutortok = "<li>" + (element.Edzoterem_nyitvatartas.Csutortok.Nyitas === "Nincs nyitva"
+    ? "Csütörtök: Zárva"
+    : "Csütörtök: " + element.Edzoterem_nyitvatartas.Csutortok.Nyitas + " - " + element.Edzoterem_nyitvatartas.Csutortok.Zaras) + "</li>";
+
+let pentek = "<li>" + (element.Edzoterem_nyitvatartas.Pentek.Nyitas === "Nincs nyitva"
+    ? "Péntek: Zárva"
+    : "Péntek: " + element.Edzoterem_nyitvatartas.Pentek.Nyitas + " - " + element.Edzoterem_nyitvatartas.Pentek.Zaras) + "</li>";
+
+let szombat = "<li>" + (element.Edzoterem_nyitvatartas.Szombat.Nyitas === "Nincs nyitva"
+    ? "Szombat: Zárva"
+    : "Szombat: " + element.Edzoterem_nyitvatartas.Szombat.Nyitas + " - " + element.Edzoterem_nyitvatartas.Szombat.Zaras) + "</li>";
+
+let vasarnap = "<li>" + (element.Edzoterem_nyitvatartas.Vasarnap.Nyitas === "Nincs nyitva"
+    ? "Vasárnap: Zárva"
+    : "Vasárnap: " + element.Edzoterem_nyitvatartas.Vasarnap.Nyitas + " - " + element.Edzoterem_nyitvatartas.Vasarnap.Zaras) + "</li>";
+
+
+    nyitvatartasList.innerHTML =  hetfo +  kedd +  szerda +  csutortok +  pentek +  szombat +  vasarnap ;   
+    
+    const arazas = document.createElement('div');
+    arazas.className = 'section-title';
+    arazas.textContent = 'Árazás';
+    /*const arazasList = element.Edzoterem_arazas.forEach(element => {
+        console.log(element);
+    })*/
+   const arazasList = document.createElement('ul');
+
+   Object.values(element.Edzoterem_arazas).forEach(item => {
+  const arazasListLi = document.createElement('li');
+  let textContent = item.nev + " - " + item.ar + " Ft";
+  arazasListLi.textContent = textContent;
+  arazasList.appendChild(arazasListLi);
+
+});
+
+
+
+ /*  console.log(Object.values(element.Edzoterem_arazas).forEach(item => {
+    arazasListLi = document.createElement('li');
+    arazasListLi.innerHTML += "<li>" + item.Nev + " - " + item.Ar + " Ft </li>";
+    arazasList.appendChild(arazasListLi);
+    console.log("<li>" + item.nev + " - " + item.ar + " Ft </li>");
+    
+}));*/
+
+
+    const ertekeles = document.createElement('div');
+    ertekeles.className = 'section-title';
+    ertekeles.textContent = 'Értékelés';
+    const ratingDiv = document.createElement('div');
+    ratingDiv.className = 'rating';
+    const starsSpan = document.createElement('span');
+    starsSpan.className = 'stars';
+    starsSpan.textContent = '★★★★★';
+    ratingDiv.textContent = "5/5";
+    ratingDiv.prepend(starsSpan);
+    arazasList.style.listStyleType = "none";
+
+    const cardContent = document.createElement('div');
+    cardContent.className = 'card-content';
+    cardContent.appendChild(title);
+    cardContent.appendChild(subtitle);
+    cardContent.appendChild(szolgáltatások);
+    cardContent.appendChild(szolgáltatásokList);
+    cardContent.appendChild(nyitvatartás);
+    cardContent.appendChild(nyitvatartasList);
+    cardContent.appendChild(arazas);
+    cardContent.appendChild(arazasList);
+    cardContent.appendChild(ertekeles);
+    cardContent.appendChild(ratingDiv);
+
+    gymCard.appendChild(cardContent);
+    a.onclick = function() {
+        window.location.href = "gymprofile.html?id=" + element.Edzoterem_id;
+    };
+    a.appendChild(gymCard);
+    document.querySelector(feltolteshelye).appendChild(a);
+}
 
 
 
     for (let index = 1; index < lsid+1; index++) {
-        const element = localStorage.getItem(index);
-        console.log(JSON.parse(element));
+        let element = localStorage.getItem(index);
+        element = JSON.parse(element);
+        console.log((element));
+        LoadGym(element, ".all-gyms-section .gym-grid");
         
     }
+
+    for (let index = 1; index < 4; index++) {
+        let element = localStorage.getItem(index);
+        element = JSON.parse(element);
+        console.log((element));
+        LoadGym(element, ".top-section .gym-grid");
+        
+    }
+    
+
+    function GymKereses() {
+        const topGymsSection = document.querySelector(".top-section .gym-grid");
+        topGymsSection.innerHTML = "";
+        const allGymSecxtion = document.querySelectorAll(".all-gyms-section .gym-grid");
+        topGymsSection.innerHTML = "";
+        
+        
+    }
+
+
+
+
+
+
 </script>
 </html>

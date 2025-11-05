@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar ami desktopon jo meretu -->
+    <section id="">
+        <img id="hero-bg" src="./grafika/1-bg-svg.svg" alt="">
+        <nav class="navbar roboto-roboto">
+
+            <a id="navlogolink" href="./index.html"><div class="nav-ossz"><img src="./grafika/logo-svg.svg" alt="logo" class="nav-logo"> <span class="nav-logo-txt">GymCompass</span></div></a>
+            <div class="menu-icon" onclick="toggleNavHidden(menu)">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#F6F4F4">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M5 7H19" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round">
+                        </path>
+                        <path d="M5 12L19 12" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M5 17L19 17" stroke="#F6F4F4" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="nav-links">
+            <section class="nav-section ">
+                <a href="./edzotermek.html">Edzőtermek</a>
+                <a href="./kapcsolat.html">Kapcsolat</a>
+                <a href="./rolunk.html">Rólunk</a>
+
+
+
+
+
+            </section>
+            <section>
+                <a href="./registracio.html"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
+
+            </section>
+
+
+
+    </section>
+    </nav>
+
+    <!-- Nav ami mobilon jo-->
+    <section class="nav-section-mobile nav-hidden" id="nav-section-mobile">
+        <ul class="nav-links-mobile">
+            <li><a href="./edzotermek.html">Edzőtermek</a></li>
+            <li><a href="./kapcsolat.html">Kapcsolat</a></li>
+            <li><a href="./rolunk.html">Rólunk</a></li>
+            <li><a href="./registracio.html"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ff7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a></li>
+
+
+        </ul>
+    </section>
+
+    <!-- Main Content -->
+    <main class="gym-detail-container">
+        <!-- Back Button -->
+        <div class="container">
+            <a href="index.html" class="back-button">← Vissza a listához</a>
+        </div>
+
+
+        <section class="images-section">
+            <div class="container">
+            <section class="gym-name-section">
+                
+                    <h1 id="gymName" class="gym-name">Edzőterem neve</h1>
+                
+        </section>
+                <div class="main-image-container">
+                    <img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="main-image">
+                </div>
+                <div class="image-gallery" id="imageGallery">
+<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
+<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
+<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
+<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
+<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="info-section">
+            <div class="container">
+                <div class="info-grid">
+
+                    <div class="info-column">
+                        <h3 class="info-title pricing-title">Szolgáltatások:</h3>
+                        <ul id="servicesList" class="services-list">
+
+                        </ul>
+                    </div>
+
+
+                    <div class="info-column">
+                        <h3 class="info-title pricing-title">Árazás:</h3>
+                        <ul id="pricingList" class="pricing-list">
+
+                        </ul>
+                    </div>
+
+                    <div class="info-column">
+                        <h3 class="info-title pricing-title">Nyitvatartás:</h3>
+                        <ul id="openingHours" class="pricing-list"></ul>
+                    </div>
+
+                    <div class="info-column">
+                        <h3 class="info-title pricing-title">Kapcsolat:</h3>
+                    <div class="contact-info">
+                    <p><strong>Cím:</strong> <span id="gymAddress"></span></p>
+                    <p><strong>Kapcsolattartó:</strong> <span id="contactName"></span></p>
+                    <p><strong>Email:</strong> <a id="contactEmail" href=""></a></p>
+                    <p><strong>Telefon:</strong> <a id="contactPhone" href=""></a></p>
+                    <div id="otherInfo" class="other-info"></div>
+                    </div>
+                    </div>
+                     <div class="info-column">
+                        <h3 class="info-title pricing-title">Linkek:</h3>
+                        <div id="socialLinks" class="social-links">
+
+                        </div>
+                    </div>
+                    <div class="info-column">
+                        <h3 class="info-title pricing-title">Vélemények:</h3>
+                        <div id="socialLinks" class="social-links">
+<div class="reviews-summary">
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-score">4.98/5</div>
+                    <div class="rating-count">69 Értékelés alapján</div>
+                </div>
+                <div class="reviews-list">
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="review-avatar">👤</div>
+                            <div class="review-info">
+                                <div class="review-author">Teszt Jóska</div>
+                                <div class="review-stars">★★★★★</div>
+                                <div class="review-date">2025.01.15</div>
+                            </div>
+                        </div>
+                        <p class="review-text">A valós vélemény rendszer még nincs kész.</p>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="map-section">
+            <div class="container">
+                <div id="map" class="map-container">
+                    <iframe id="mapFrame" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="links-section" id="linksSection" style="display: none;">
+
+        </section>
+
+
+        
+    </main>
+
+        <section class="footer">
+            <div>
+            <img src="./grafika/logo-text-svg.svg.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="./index.html">Főoldal</a></li>
+                <li><a href="./kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="./edzotermek.html">Edzőtermek</a></li>
+                <li><a href="./rolunk.html">Rólunk</a></li>
+                <li><a href="./registracio.html">Regisztráció</a></li>
+            
+            </ul>
+        </section>
+</body>
+<script>
+    const menu = document.getElementById("nav-section-mobile");
+    function toggleNavHidden(element) {
+        element.classList.toggle("nav-hidden");
+    }
+    const urlParams = new URLSearchParams(window.location.search);
+    const gymId = urlParams.get('id');
+    const edzotermek = [];
+    
+    for (let i = 0; i < localStorage.length; i++) {
+        edzotermek.push(JSON.parse(localStorage.getItem(i)));
+        console.log(JSON.parse(localStorage.getItem(i)));
+    }
+    let index = 1;
+    while (edzotermek[index].Edzoterem_id !== gymId && index < edzotermek.length) {
+        index++;
+        const megtalaltGym = edzotermek[index];
+        
+        console.log(index)
+    }
+    const megtalaltGym = edzotermek[index];
+
+    console.log(megtalaltGym);
+
+    function populateGymDetails(gym) {
+  // Set gym name
+  document.getElementById("gymName").textContent = gym.Edzoterem_adatok.Edzoterem_nev
+  document.title = `${gym.Edzoterem_adatok.Edzoterem_nev} - GYMCOMPASS`
+
+  // Load images
+
+
+  // Load services
+  loadServices(gym.Edzoterem_adatok.Edzoterem_szolgaltatasok)
+
+  // Load pricing
+  loadPricing(gym.Edzoterem_arazas)
+
+ 
+  // Load contact information
+  loadContactInfo(gym)
+
+  // Load map
+  loadMap(gym.Edzoterem_adatok.Edzoterem_cim)
+
+  // Load social links
+  if (gym.Edzoterem_linkek && gym.Edzoterem_linkek.length > 0) {
+    loadSocialLinks(gym.Edzoterem_linkek)
+  }
+}
+
+
+
+function loadServices(services) {
+  const servicesList = document.getElementById("servicesList")
+  servicesList.innerHTML = ""
+
+  if (!services || services.length === 0) {
+    servicesList.innerHTML = "<li>Nincs megadva szolgáltatás</li>"
+    return
+  }
+
+  services.forEach((service) => {
+    const li = document.createElement("li")
+    li.textContent = service
+    servicesList.appendChild(li)
+  })
+}
+
+function loadPricing(pricing) {
+  const pricingList = document.getElementById("pricingList")
+  pricingList.innerHTML = ""
+
+  if (!pricing || pricing.length === 0) {
+    pricingList.innerHTML = "<li>Nincs megadva árazás</li>"
+    return
+  }
+
+  pricing.forEach((price) => {
+    const li = document.createElement("li")
+    li.innerHTML = `
+            <span>${price.nev}</span>
+            <span class="price">${price.ar}</span>
+        `
+    pricingList.appendChild(li)
+  })
+}
+
+
+
+function loadContactInfo(gym) {
+
+  document.getElementById("gymAddress").textContent = gym.Edzoterem_adatok.Edzoterem_cim
+
+
+  document.getElementById("contactName").textContent = gym.Kapcsolattarto_adatok.Kapcsolattarto_nev
+
+  const emailLink = document.getElementById("contactEmail")
+  emailLink.textContent = gym.Kapcsolattarto_adatok.Kapcsolattarto_email
+  emailLink.href = `mailto:${gym.Kapcsolattarto_adatok.Kapcsolattarto_email}`
+
+
+  const phoneLink = document.getElementById("contactPhone")
+  phoneLink.textContent = gym.Kapcsolattarto_adatok.Kapcsolattarto_tel
+  phoneLink.href = `tel:${gym.Kapcsolattarto_adatok.Kapcsolattarto_tel}`
+
+
+  const otherInfo = document.getElementById("otherInfo")
+  if (gym.Edzoterem_adatok.Edzoterem_egyeb_inf) {
+    otherInfo.innerHTML = `<p><strong>Egyéb információ:</strong> ${gym.Edzoterem_adatok.Edzoterem_egyeb_inf}</p>`
+  }
+}
+
+function loadMap(address) {
+  const mapFrame = document.getElementById("mapFrame")
+  const encodedAddress = encodeURIComponent(address)
+  mapFrame.src = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodedAddress}`
+
+
+  mapFrame.src = `https://maps.google.com/maps?q=${encodedAddress}&output=embed`
+}
+
+function loadSocialLinks(links) {
+  const linksSection = document.getElementById("linksSection")
+  const socialLinks = document.getElementById("socialLinks")
+
+  linksSection.style.display = "block"
+  socialLinks.innerHTML = ""
+
+  links.forEach((link) => {
+    const a = document.createElement("a")
+    a.href = link.url
+    a.textContent = link.nev
+    a.className = "social-link"
+    a.target = "_blank"
+    a.rel = "noopener noreferrer"
+    socialLinks.appendChild(a)
+  })
+}
+    populateGymDetails(megtalaltGym);
+
+
+function LoadImages(element) {
+     const nyitvatartás = document.createElement('div');
+            nyitvatartás.textContent = "Nyitvatartás";
+            nyitvatartás.className = 'section-title';
+            const nyitvatartasList = document.createElement('ul');
+            nyitvatartasList.id = 'nyitvatartasList';
+            nyitvatartasList.className = 'pricing-list';
+            nyitvatartasList.style.listStyleType = "none";
+
+let hetfo = "<li>" + (element.Edzoterem_nyitvatartas.Hetfo.Nyitas === "Nincs nyitva"
+    ? "Hétfő: Zárva"
+    : "Hétfő: " + element.Edzoterem_nyitvatartas.Hetfo.Nyitas + " - " + element.Edzoterem_nyitvatartas.Hetfo.Zaras) + "</li>";
+
+let kedd = "<li>" + (element.Edzoterem_nyitvatartas.Kedd.Nyitas === "Nincs nyitva"
+    ? "Kedd: Zárva"
+    : "Kedd: " + element.Edzoterem_nyitvatartas.Kedd.Nyitas + " - " + element.Edzoterem_nyitvatartas.Kedd.Zaras) + "</li>";
+
+let szerda = "<li>" + (element.Edzoterem_nyitvatartas.Szerda.Nyitas === "Nincs nyitva"
+    ? "Szerda: Zárva"
+    : "Szerda: " + element.Edzoterem_nyitvatartas.Szerda.Nyitas + " - " + element.Edzoterem_nyitvatartas.Szerda.Zaras) + "</li>";
+
+let csutortok = "<li>" + (element.Edzoterem_nyitvatartas.Csutortok.Nyitas === "Nincs nyitva"
+    ? "Csütörtök: Zárva"
+    : "Csütörtök: " + element.Edzoterem_nyitvatartas.Csutortok.Nyitas + " - " + element.Edzoterem_nyitvatartas.Csutortok.Zaras) + "</li>";
+
+let pentek = "<li>" + (element.Edzoterem_nyitvatartas.Pentek.Nyitas === "Nincs nyitva"
+    ? "Péntek: Zárva"
+    : "Péntek: " + element.Edzoterem_nyitvatartas.Pentek.Nyitas + " - " + element.Edzoterem_nyitvatartas.Pentek.Zaras) + "</li>";
+
+let szombat = "<li>" + (element.Edzoterem_nyitvatartas.Szombat.Nyitas === "Nincs nyitva"
+    ? "Szombat: Zárva"
+    : "Szombat: " + element.Edzoterem_nyitvatartas.Szombat.Nyitas + " - " + element.Edzoterem_nyitvatartas.Szombat.Zaras) + "</li>";
+
+let vasarnap = "<li>" + (element.Edzoterem_nyitvatartas.Vasarnap.Nyitas === "Nincs nyitva"
+    ? "Vasárnap: Zárva"
+    : "Vasárnap: " + element.Edzoterem_nyitvatartas.Vasarnap.Nyitas + " - " + element.Edzoterem_nyitvatartas.Vasarnap.Zaras) + "</li>";
+
+
+    nyitvatartasList.innerHTML =  hetfo +  kedd +  szerda +  csutortok +  pentek +  szombat +  vasarnap ; 
+        const openingHoursDiv = document.getElementById("openingHours")
+    openingHoursDiv.appendChild(nyitvatartasList);
+    console.log(nyitvatartasList);
+    
+}
+
+LoadImages(megtalaltGym);
+
+
+</script>
+</html>
