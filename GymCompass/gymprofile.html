@@ -63,31 +63,26 @@
 
     <!-- Main Content -->
     <main class="gym-detail-container">
-        <!-- Back Button -->
-        <div class="container">
-            <a href="index.html" class="back-button">← Vissza a listához</a>
-        </div>
+
 
 
         <section class="images-section">
             <div class="container">
-            <section class="gym-name-section">
-                
-                    <h1 id="gymName" class="gym-name">Edzőterem neve</h1>
-                
-        </section>
+
                 <div class="main-image-container">
                     <img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="main-image">
                 </div>
                 <div class="image-gallery" id="imageGallery">
-<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
-<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
-<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
-<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
-<img id="mainImage" src="./grafika/placeholderimg.jpg" alt="Edzőterem" class="gallery-image">
+
 
                 </div>
+                                        <section class="gym-name-section">
+                
+                    <h1 id="gymName" class="gym-name">Edzőterem neve</h1>
+                
+        </section>
             </div>
+
         </section>
 
 
@@ -202,23 +197,70 @@
     }
     const urlParams = new URLSearchParams(window.location.search);
     const gymId = urlParams.get('id');
-    const edzotermek = [];
+    const edzotermekunfiltered = [];
     
-    for (let i = 0; i < localStorage.length; i++) {
-        edzotermek.push(JSON.parse(localStorage.getItem(i)));
+    for (let i = 0; i < localStorage.length+1; i++) {
+        edzotermekunfiltered.push(JSON.parse(localStorage.getItem(i)));
         console.log(JSON.parse(localStorage.getItem(i)));
     }
+
+    const edzotermek = edzotermekunfiltered.filter(gym => gym !== null);
     let index = 1;
-    while (edzotermek[index].Edzoterem_id !== gymId && index < edzotermek.length) {
-        index++;
-        const megtalaltGym = edzotermek[index];
-        
-        console.log(index)
+
+
+    const lsid = edzotermek.length - 1;
+
+
+    
+
+
+    function GymKereses(id) {
+        for (let i = 0; i < edzotermek.length; i++) {
+            if (edzotermek[i].Edzoterem_id === id) {
+                return edzotermek[i];
+            }
+        }
+        return null;
     }
-    const megtalaltGym = edzotermek[index];
+
+
+
+
+    const megtalaltGym = GymKereses(gymId);
 
     console.log(megtalaltGym);
 
+    function LoadImagesGallery(images) {
+        
+        const imageGallery = document.getElementById("imageGallery");
+        imageGallery.innerHTML = "";
+        var index = 0;
+        images.forEach(src => {
+            
+            const img = document.createElement("img");
+            img.src = src;
+            img.className = "gallery-image";
+            img.id = index;
+            img.onclick = function() {
+                LoadMainImage(src);
+            };
+            imageGallery.appendChild(img);
+            index++;
+        });
+
+    }
+    LoadMainImage(megtalaltGym.Edzoterem_kepek[0]);
+    function LoadMainImage(src) {
+        const mainImage = document.getElementById("mainImage");
+        mainImage.src = src;
+    }
+    LoadImagesGallery(megtalaltGym.Edzoterem_kepek);
+
+    if (megtalaltGym.Edzoterem_kepek.length === 0) {
+        LoadMainImage("./grafika/placeholderimg.jpg");
+    } else {
+        LoadMainImage(megtalaltGym.Edzoterem_kepek[0]);
+    }
     function populateGymDetails(gym) {
   // Set gym name
   document.getElementById("gymName").textContent = gym.Edzoterem_adatok.Edzoterem_nev

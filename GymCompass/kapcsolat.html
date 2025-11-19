@@ -156,12 +156,13 @@
                     </div>
 
                     <h3 class="subsection-title-orange">Képek:</h3>
-                    <p class="info-text">Minimum 7 kép feltöltése ajánlott.</p>
+                    <p class="info-text">Minimum 3 kép feltöltése ajánlott.</p>
                     <div class="form-img-upload">
                         <label class="" for="images"></label>
                         <input type="file" id="images" accept="image/png, image/jpeg, image/jpg" multiple placeholder="Min 7 ajánlott">
-
+                        
                     </div>
+
 
                     <h3 class="subsection-title-orange">Nyitva tartás:</h3>
 
@@ -293,6 +294,9 @@
         </form>
     </div>
 </div>
+    <section class="alert hidden">
+        
+    </section>
 
     </section>
         <section class="footer">
@@ -312,7 +316,27 @@
 </body>
 <!-- Guthub miatt added cuccos-->
 <script>
+    function checkLogin() {
+        const loggedInUser = localStorage.getItem("logged_in_user");
+        if (loggedInUser) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
+    function showAlert(message, color) {
+        const alertBox = document.querySelector(".alert");
+        alertBox.textContent = message;
+        alertBox.classList.remove("hidden");
+        alertBox.style.border = "2px solid " + color;
+        alertBox.style.color = color;
+        setTimeout(() => {
+            alertBox.classList.add("hidden");
+            alertBox.style.border = "none";
+            alertBox.textContent = "";
+        }, 10000);
+    }
     const ArakAdd = document.getElementById("ArakContainer");
     ArakAdd.querySelector("button").addEventListener("click", function() {
         const newArDiv = document.getElementById("ArakAdd");
@@ -379,7 +403,12 @@
 
 
 
-function SendGymData() {
+
+async function SendGymData() {
+    if (!checkLogin()) {
+        showAlert("Kérlek jelentkezz be az edzőterem regisztrációhoz!", "red");
+        return;
+    } else {}
     let lsindex = localStorage.length;
   const form = document.querySelector(".registration-form");
     const contactName = document.getElementById("reg-name").value.trim();
@@ -390,7 +419,7 @@ function SendGymData() {
     const otherInfo = document.querySelector('textarea[placeholder="Kis Pista"]').value.trim();
     const services = document.querySelector('input[placeholder="Pl.: Szauna, Uszoda, stb."]').value.split(",").map(s => s.trim()).filter(s => s !== "");
     const imageFiles = document.getElementById("images").files;
-    const imagePaths = Array.from(imageFiles).map(f => f.name);
+    const imagePaths = await kepFeltoltes();
     const scheduleRows = document.querySelectorAll(".schedule-row");
     const days = ["Hetfo", "Kedd", "Szerda", "Csutortok", "Pentek", "Szombat", "Vasarnap"];
     const schedule = {};
@@ -404,7 +433,7 @@ function SendGymData() {
 
 if ((contactName && contactEmail && contactPhone && gymName && gymAddress && otherInfo && services && imageFiles && imagePaths && scheduleRows && linkNameInput && linkUrlInput &&berletAr && berletAr) == "" ) {
     console.log("Cont name" + contactName + "ConEmail" + contactEmail + contactPhone + gymName + gymAddress + otherInfo + services + imageFiles + imagePaths + scheduleRows + linkNameInput + linkUrlInput + berletAr + berletAr);
-    alert("Kérlek töltsd ki a kötelező mezőket: Kapcsolattartási adatok és Edzőterem adatok. Minden mező feltöltése kötelező, és a felhasználók igényét szolgálja.");
+    showAlert("Kérlek töltsd ki a kötelező mezőket: Kapcsolattartási adatok és Edzőterem adatok. Minden mező feltöltése kötelező, és a felhasználók igényét szolgálja.", "red");
     
     return;}
     else {
@@ -477,12 +506,40 @@ if ((contactName && contactEmail && contactPhone && gymName && gymAddress && oth
     };
     
 
+
+
+
     console.log("Feltöltött JSON:", gymData);
     localStorage.setItem(lsindex+1, JSON.stringify(gymData));
-    alert("Sikeres adatküldés! Az adatok elmentve a localStorage-ba.");
+    showAlert("Sikeres adatküldés! Az adatok elmentve a localStorage-ba.", "green");
     }
-    
 }
+
+
+
+async function kepFeltoltes() {
+  const files = document.getElementById("images").files;
+  if (!files.length) {
+    showAlert("Válassz ki legalább egy képet!", "red");
+    return [];
+  }
+
+  const promises = [];
+
+  for (let file of files) {
+    promises.push(new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = (e) => resolve(e.target.result);
+      reader.readAsDataURL(file);
+    }));
+  }
+
+  const imagesArray = await Promise.all(promises);
+  console.log("Feltöltött képek (base64):", imagesArray);
+  return imagesArray; // <-- már tényleg a képek!
+}
+
+
 
 
     

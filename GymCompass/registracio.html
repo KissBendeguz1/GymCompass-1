@@ -100,8 +100,9 @@
         <label for="password2">Jelszó ismét:</label>
         <input type="password" id="password2" name="password2" required>
 
-        <button type="submit" class="btn-submit">Regisztráció</button>
+        <button type="button" class="btn-submit">Regisztráció</button>
         <h3 class="subsection-title-orange">Van profilja? <span class="reg-span-link" onclick="ShowLogin()">Belépés</span></h3>
+
         
       </form>
     </div>
@@ -120,13 +121,15 @@
         <input type="password" id="password" name="password" required>
 
 
-        <button type="submit" class="btn-submit">Bejelentkezés</button>
+        <button type="button" class="btn-submit">Bejelentkezés</button>
         <h3 class="subsection-title-orange">Nincs profilja? <span class="reg-span-link" onclick="ShowRegister()">Regisztráció</span></h3>
+
       </form>
     </div>
 
 
   </main>
+    <div class="alert hidden"></div>
         <section class="footer">
             <div>
             <img src="./grafika/logo-text-svg.svg.png" alt="logo">
@@ -143,24 +146,134 @@
     </div>
 </body>
 <script>
-    const menu = document.getElementById("nav-section-mobile");
-    function toggleNavHidden(element) {
-        element.classList.toggle("nav-hidden");
+
+const menu = document.getElementById("nav-section-mobile");
+function toggleNavHidden(element) {
+    element.classList.toggle("nav-hidden");
+}
+
+const reg = document.getElementById("register");
+const log = document.getElementById("login");
+
+function ShowRegister() {
+    log.classList.add("hidden");
+    reg.classList.remove("hidden");
+}
+
+function ShowLogin() {
+    log.classList.remove("hidden");
+    reg.classList.add("hidden");
+}
+
+function showAlert(message, color = "red") {
+    const alertBox = document.querySelector(".alert");
+    alertBox.textContent = message;
+    alertBox.classList.remove("hidden");
+    alertBox.style.border = "2px solid " + color;
+    alertBox.style.color = color;
+    setTimeout(() => {
+        alertBox.classList.add("hidden");
+        alertBox.style.border = "none";
+        alertBox.textContent = "";
+    }, 5000);
+}
+
+
+const registerForm = document.querySelector('#register form');
+registerForm.querySelector('.btn-submit').addEventListener("click", function() {
+    const email = registerForm.querySelector('input[name="email"]').value.trim();
+    const username = registerForm.querySelectorAll('input[name="name"]')[0].value.trim();
+    const fullname = registerForm.querySelectorAll('input[name="name"]')[1].value.trim();
+    const password = registerForm.querySelector('input[name="password"]').value.trim();
+    const password2 = registerForm.querySelector('input[name="password2"]').value.trim();
+
+    if (!email || !username || !fullname || !password || !password2) {
+        showAlert("Kérlek tölts ki minden mezőt!");
+        return;
     }
 
-    const reg = document.getElementById("register");
-    const log = document.getElementById("login");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        showAlert("Az e-mail cím formátuma nem megfelelő!");
+        return;
+    }
 
-    function ShowRegister() {
-      log.classList.add("hidden");
-      reg.classList.remove("hidden");
+    if (username.length < 4) {
+        showAlert("A felhasználónév legalább 4 karakter legyen!");
+        return;
+    }
+
+    if (password.length < 6) {
+        showAlert("A jelszó legalább 6 karakter legyen!");
+        return;
+    }
+
+    if (password !== password2) {
+        showAlert("A két jelszó nem egyezik!");
+        return;
     }
 
 
-        function ShowLogin() {
-      log.classList.remove("hidden");
-      reg.classList.add("hidden");
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key.startsWith("user_")) {
+            const userData = JSON.parse(localStorage.getItem(key));
+            if (userData.email === email) {
+                showAlert("Ez az email már regisztrálva van!");
+                return;
+            }
+            if (userData.username === username) {
+                showAlert("Ez a felhasználónév már foglalt!");
+                return;
+            }
+        }
     }
+
+    const newUser = { email, username, fullname, password };
+    localStorage.setItem("user_" + username, JSON.stringify(newUser));
+
+    showAlert("Regisztráció sikeres!", "green");
+
+    ShowLogin();
+});
+
+
+const loginForm = document.querySelector('#login form');
+loginForm.querySelector('.btn-submit').addEventListener("click", function() {
+    const emailInput = loginForm.querySelector('input[name="email"]').value.trim();
+    const usernameInput = loginForm.querySelectorAll('input[name="name"]')[0].value.trim();
+    const passwordInput = loginForm.querySelector('input[name="password"]').value.trim();
+
+    if (!emailInput || !usernameInput || !passwordInput) {
+        showAlert("Kérlek tölts ki minden mezőt!");
+        return;
+    }
+
+    let foundUser = null;
+
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key.startsWith("user_")) {
+            const userData = JSON.parse(localStorage.getItem(key));
+            if ((userData.email === emailInput || userData.username === usernameInput)
+                && userData.password === passwordInput) {
+                foundUser = userData;
+                break;
+            }
+        }
+    }
+
+    if (!foundUser) {
+        showAlert("Hibás email/felhasználónév vagy jelszó!");
+        return;
+    }
+
+    localStorage.setItem("logged_in_user", JSON.stringify(foundUser));
+
+    showAlert("Sikeres bejelentkezés!", "green");
+
+  
+});
 
 </script>
 
