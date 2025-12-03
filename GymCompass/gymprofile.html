@@ -170,19 +170,20 @@
 
                     <div class="info-column" id="CommentField">
 
-
+                        <p id="commentInfo"></p>
                     </div>
                     <div class="info-column">
                         <h3 class="info-title pricing-title">Értékelés:</h3>
                         <div class="ertekeles-div">
                             <h1 id="mainErtekeles">Asd</h1>
                             <h2 id="ertekelesCsillagok">asdasdasdasd</h2>
+                            
                         </div>
                     </div>
 
                 </div>
                 <div class="info-column" id="ertekelesek">
-
+                    
 
 
                 </div>
@@ -574,7 +575,7 @@
     function displayCommentek() {
         if (comments.length < 1) {
             const ertekelesekDiv = document.getElementById("ertekelesek");
-            ertekelesekDiv.textContent = "Nincs még értékelés."
+            ertekelesekDiv.textContent = "Nincs még értékelés "
         }
         comments.forEach(element => {
             console.log(element);
