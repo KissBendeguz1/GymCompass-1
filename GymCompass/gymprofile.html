@@ -572,6 +572,10 @@
 
 
     function displayCommentek() {
+        if (comments.length < 1) {
+            const ertekelesekDiv = document.getElementById("ertekelesek");
+            ertekelesekDiv.textContent = "Nincs még értékelés."
+        }
         comments.forEach(element => {
             console.log(element);
             const elementDate = element.date;
