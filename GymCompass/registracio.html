@@ -99,7 +99,7 @@
 
         <label for="password2">Jelszó ismét:</label>
         <input type="password" id="password2" name="password2" required>
-
+        <div class="alert hidden"></div>
         <button type="button" class="btn-submit">Regisztráció</button>
         <h3 class="subsection-title-orange">Van profilja? <span class="reg-span-link" onclick="ShowLogin()">Belépés</span></h3>
 
@@ -120,6 +120,7 @@
         <label for="password">Jelszó:</label>
         <input type="password" id="password" name="password" required>
 
+        <div class="alert hidden"></div>
 
         <button type="button" class="btn-submit">Bejelentkezés</button>
         <h3 class="subsection-title-orange">Nincs profilja? <span class="reg-span-link" onclick="ShowRegister()">Regisztráció</span></h3>
@@ -127,9 +128,18 @@
       </form>
     </div>
 
+    <div class="container form-section" id="loggedinuser">
+        <h2 class="section-title">Bejelentkezve mint:</h2>
+        <div class="user-data-reg" id="user-data-reg">
+            
+
+        </div>
+        <button onclick="logout()" class="btn-submit">Kijelentkezés</button>
+    </div>
+
 
   </main>
-    <div class="alert hidden"></div>
+
         <section class="footer">
             <div>
             <img src="./grafika/logo-text-svg.svg.png" alt="logo">
@@ -146,6 +156,12 @@
     </div>
 </body>
 <script>
+
+    const user = JSON.parse(localStorage.getItem("logged_in_user")) || null;
+
+function logout() {
+    localStorage.removeItem("logged_in_user")
+}
 
 const menu = document.getElementById("nav-section-mobile");
 function toggleNavHidden(element) {
@@ -166,16 +182,21 @@ function ShowLogin() {
 }
 
 function showAlert(message, color = "red") {
-    const alertBox = document.querySelector(".alert");
-    alertBox.textContent = message;
-    alertBox.classList.remove("hidden");
-    alertBox.style.border = "2px solid " + color;
-    alertBox.style.color = color;
+    const alertBox = document.querySelectorAll(".alert");
+    alertBox.forEach(element => {
+        console.log(element)
+            element.textContent = message;
+            element.classList.remove("hidden");
+            element.style.border = "2px solid " + color;
+            element.style.color = color;
     setTimeout(() => {
-        alertBox.classList.add("hidden");
-        alertBox.style.border = "none";
-        alertBox.textContent = "";
+        
+        element.classList.add("hidden");
+        element.style.border = "none";
+        element.textContent = "";
     }, 5000);
+    });
+
 }
 
 
@@ -274,6 +295,21 @@ loginForm.querySelector('.btn-submit').addEventListener("click", function() {
 
   
 });
+
+if (user) {
+    reg.classList.add("hidden");
+    log.classList.add("hidden");
+    const loggedin = document.getElementById("user-data-reg")
+    loggedin.innerHTML += `
+                <p class="user-info"><strong>Felhasználónév:</strong> ${user.username}</p>
+            <p class="user-info"><strong>Teljes Név:</strong> ${user.fullname}</p>
+            <p class="user-info"><strong>E-mail:</strong> ${user.email}</p>
+            `
+} else {
+  ShowLogin();
+  const loggedinuser = document.getElementById("loggedinuser")
+  loggedinuser.classList.add("hidden")
+}
 
 </script>
 
